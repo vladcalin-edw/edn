@@ -4,6 +4,9 @@ Logic for note taking
 [x] create endpoint to send data to model
 [x] receive data from model
 
-[] generate html from markdown
-[] generate pdf from html
-[] send pdf response
+[x] generate html from markdown
+[x] generate pdf from html
+[x] send pdf response
+
+[x] create email service
+[] run generate in the background and then send to mail
