@@ -1,27 +1,29 @@
+import threading
+
 from flask import Flask, request
 
-from services import GenerateDoc, GenerateData, EmailService
+from services import EmailService, SummarizeService
 
 
 app = Flask(__name__)
 
 
 # For dev purposes
-@app.route("/mail", methods=["POST"])
-def handle_mail():
+# @app.route("/mail", methods=["POST"])
+# def handle_mail():
 
-    pdf_file = None
+#     pdf_file = None
 
-    with app.open_resource("summaries/1764829519.2568572.pdf") as pdf:
-        pdf_file = pdf.read()
+#     with app.open_resource("summaries/1764829519.2568572.pdf") as pdf:
+#         pdf_file = pdf.read()
 
-    if not pdf_file:
-        return "pdf missing"
+#     if not pdf_file:
+#         return "pdf missing"
 
-    email_service = EmailService(app)
-    email_service.send(["calinvladth@icloud.com"], pdf_file)
+#     email_service = EmailService(app)
+#     email_service.send(["calinvladth@icloud.com"], pdf_file)
 
-    return "ok"
+#     return "ok"
 
 
 @app.route("/summarize", methods=["POST"])
@@ -31,32 +33,25 @@ def summarize():
     if not data:
         return "data missing"
 
-    # Enable threading for this
-    try:
-        # Generate summary
-        generate_data = GenerateData()
-        generate_data.build_prompt(data)
-        generate_data.create_summary()
+    if not data["recipients"]:
+        return "recipients missing"
 
-        if not generate_data.response:
-            return "summary not created"
+    if not data["meeting"]:
+        return "meeting missing"
 
-        # Make summary pdf
-        generate_doc = GenerateDoc(md_text=generate_data.response)
-        generate_doc.generate_html()
+    summarize_service = SummarizeService(
+        data=data["meeting"],
+        app=app,
+        recipients=data["recipients"],
+    )
 
-        if not generate_doc.html:
-            return "html missing"
+    summarize_service_thread = threading.Thread(
+        target=summarize_service.generate, name="generate_summary"
+    )
 
-        generate_doc.generate_pdf()
+    summarize_service_thread.start()
 
-        if not generate_doc.pdf:
-            return "pdf missing"
-
-        return generate_data.response
-
-    except Exception as e:
-        return f"something went wrong: {e}"
+    return "the summary is generating"
 
 
 if __name__ == "__main__":

@@ -19,13 +19,16 @@ class EmailService:
         self.mail = Mail(app)
 
     def send(self, recipients, attachment):
-        msg = Message(
-            "Your edn meeting sumary",
-            recipients=recipients,
-            body="This is the generated meeting summary.",
-        )
+        try:
+            msg = Message(
+                "Your edn meeting sumary",
+                recipients=recipients,
+                body="This is the generated meeting summary.",
+            )
 
-        # I assume sending only a pdf file
-        msg.attach("summary.pdf", "application/pdf", attachment)
-        self.mail.send(msg)
-        return "Email sent successfully!"
+            # I assume sending only a pdf file
+            msg.attach("summary.pdf", "application/pdf", attachment)
+            self.mail.send(msg)
+            return "Email sent successfully!"
+        except Exception as e:
+            print(f"email not sent: {e}")

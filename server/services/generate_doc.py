@@ -51,8 +51,12 @@ class GenerateDoc:
         try:
             config = pdfkit.configuration(wkhtmltopdf=self.wkhtmltopdf)
             self.pdf = pdfkit.from_string(
-                self.html, self.pdf_path, configuration=config
+                self.html, output_path=None, configuration=config
             )
+
+            with open(self.pdf_path, "wb") as f:
+                f.write(self.pdf)
+
         except Exception as e:
             raise ValueError(f"something went wrong: {e}")
 

@@ -8,10 +8,8 @@ class GenerateData:
 
     def build_prompt(self, data):
         self.prompt = f"""
-        Summarize the following meeting transcript in 3 - 5 phrases.
-        Generate a list of action items.
-
-        Give me just the summary and action items, no other text.
+        Summarize the following meeting transcript in 3 - 8 phrases and only return the summary.
+        Generate a list of action items and only return the action items.
 
         Transcript JSON:
         {data}
