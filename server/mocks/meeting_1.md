@@ -1,0 +1,209 @@
+# Simulare ședință 1: Proiect fabrică de pâine București (plan 2026)
+
+## Participanți și roluri
+
+**Andrei Ionescu – Director de Proiect (Project Director)**
+
+- **Funcție:** coordonatorul general al inițiativei „Fabrica București 2026”.
+- **Atribuții principale:** definirea obiectivelor proiectului, calendarul major (gate‑uri, livrabile, faze), bugetul general și aprobările interne; alinierea cu board‑ul și cu operațiunile celor 5 fabrici existente; managementul riscurilor și deciziilor critice; coordonarea echipelor (tehnic, operațional, legal, achiziții).
+- **Responsabil aici:** să stabilească direcția, să obțină consens pe timeline (începere construcție în iulie 2026), să clarifice dependențele și să decidă următorii pași.
+
+**Bogdan Matei – Director Tehnic / Inginer Șef (Technical Director / Chief Engineer)**
+
+- **Funcție:** responsabil de partea tehnică și de construcție a noii fabrici.
+- **Atribuții principale:** conceptul tehnic al fabricii, alegerea tehnologilor și a liniei de producție; identificarea terenului potrivit din punct de vedere tehnic; planul de utilități (apă, gaz, electricitate, canalizare), cerințe de construcție; managementul relației cu arhitecți, proiectanți și constructori; estimări de cost tehnic și termene; standardizarea cu fabricile existente.
+- **Responsabil aici:** să detalieze cerințele tehnice, să propună o secvență realistă pentru proiectare și construcție și să semnaleze riscuri tehnice.
+
+**Cristi Dumitrescu – Manager Operațiuni și Lansare Fabrică (Operations & Plant Launch Manager)**
+
+- **Funcție:** pregătește operațional fabrica pentru pornire și integrare în rețeaua companiei.
+- **Atribuții principale:** definirea capacității, fluxurilor operaționale și a planului de personal; cerințe de depozitare, logistică și distribuție pentru București; alinierea la standardele de calitate și siguranță alimentară (HACCP, ISO); planul de punere în funcțiune, testare și ramp‑up; pregătirea echipei locale și transfer de know‑how din cele 5 fabrici existente.
+- **Responsabil aici:** să pună cerințe operaționale în design, să estimeze nevoile de oameni și timeline‑ul de lansare după construcție.
+
+## Scenariu / Agendă de ședință (30 min)
+
+**Context:** ședință internă de aliniere pe planificarea construirii primei fabrici din București. Proiect pentru anul 2026. Obiectiv: să stabilească pașii până la începerea construcției în iulie 2026 și elementele cheie de design, operațiuni și buget.
+
+**Agenda:**
+
+1. Recap obiective și status (Andrei) – 5 min
+2. Discuție teren și infrastructură utilități (Bogdan) – 7 min
+3. Capacitate, fluxuri operaționale și plan personal (Cristi) – 7 min
+4. Timeline detaliat până la iulie 2026, dependențe și riscuri (toți) – 8 min
+5. Decizii, acțiuni și next steps (Andrei) – 3 min
+
+---
+
+Transcript sedinta
+
+[00:00] Andrei: Bună dimineața, hai să începem. Ședința de azi e despre fabrica de pâine din București, proiectul pentru 2026. Avem treizeci de minute să ne aliniem pe teren, cerințe tehnice și operaționale, și mai ales pe pașii până la începerea construcției în iulie 2026. Sunteți ok cu agenda?
+
+[00:22] Bogdan: Da, sună bine. Am pregătit câteva puncte tehnice despre teren și utilități.
+
+[00:27] Cristi: Și eu am notat ce avem nevoie operațional, ca să nu ne trezim că proiectăm fără fluxurile corecte.
+
+[00:33] Andrei: Perfect. Încep cu un recap scurt. Avem aprobarea de principiu din board pentru a șasea fabrică, prima în București. Scopul e să acoperim cererea în creștere din zona de sud și să optimizăm distribuția, pentru că acum livrăm din Ploiești și Brașov și costurile sunt mari. Bugetul preliminar pe care l am trimis e de cincisprezece milioane de euro, cu o marjă de plus minus zece la sută. Până la final de trimestru unu 2026 trebuie să avem terenul contractat și proiectarea autorizabilă gata. Ok?
+
+[01:12] Bogdan: Da. Din ce văd eu, dacă vrem să începem în iulie 2026, trebuie să înghețăm conceptul tehnic cel târziu în februarie, altfel nu avem timp pentru avize și licitația de constructor. Terenul e critic, pentru că utilitățile sunt diferite față de celelalte cinci fabrici.
+
+[01:32] Cristi: Și din partea mea, terenul contează pentru acces logistic. Avem nevoie de intrare separată pentru camioane de făină și pentru distribuție, și de spațiu de manevră, altfel blocăm fluxul.
+
+[01:46] Andrei: Bun. Bogdan, intră te rog pe partea de teren și utilități, ce ai găsit?
+
+[01:53] Bogdan: Am analizat trei zone posibile, toate în jurul Bucureștiului. Prima e în nord vest, lângă centură, în zona Chitila. Avantaj: acces bun la drumuri, teren relativ mare, cam patru hectare. Dezavantaj: rețeaua de gaz e la distanță și ar necesita o extindere cu costuri suplimentare. A doua variantă e în sud est, spre Popești Leordeni. Acolo gazul și electricul sunt aproape, dar terenul e mai îngust și trebuie să facem o soluție compactă. A treia e în vest, spre Dragomirești Vale. Acolo avem teren industrial deja, utilități medii ca distanță, dar solul e mai argilos, ar trebui studiu geotehnic mai atent.
+
+[02:44] Andrei: Care ți se pare cea mai realistă tehnic?
+
+[02:47] Bogdan: Pentru calendar, Popești Leordeni e cea mai ușoară din punct de vedere al utilităților. Ne ajută să nu pierdem luni pe extinderi de rețele. Dar trebuie să vedem dacă putem încadra linia de producție și depozitarea pe un layout mai strâns.
+
+[03:07] Cristi: Layout strâns poate funcționa, dar nu vreau să pierdem capacitate și nici să avem fluxuri care se intersectează. Acolo trebuie să proiectăm pe verticală unele zone, cum ar fi depozitul de ambalaje, dar asta înseamnă lifturi industriale și costuri.
+
+[03:26] Bogdan: Da, și în plus pentru clădiri pe verticală crește și cerința de structură. Totuși, se poate, avem exemple în fabricile din Cluj și Iași unde am făcut mezzanine pentru ambalaje.
+
+[03:42] Andrei: Ok. Dacă Popești e preferată tehnic, ce risc principal vezi?
+
+[03:49] Bogdan: Două riscuri. Unu, suprafața mică poate limita extinderea ulterioară. Doi, trebuie verificat regimul urbanistic, să nu avem limită de înălțime prea mică. Dacă PUZ ul cere maxim doisprezece metri și noi avem nevoie de optsprezece în zona silozurilor de făină, intrăm în probleme.
+
+[04:12] Andrei: Notat. Putem cere un certificat de urbanism preliminar imediat ce intrăm în negocierea terenului. Cristi, din punct de vedere operațional, care variantă te avantajează?
+
+[04:26] Cristi: Din perspectivă de distribuție spre București, îmi convine sud est sau nord vest. Sud est e mai aproape de autostrada spre Constanța pentru livrările noastre regionale, iar nord vest are acces rapid spre A1 și spre nord. Dacă avem majoritatea clienților în București și Ilfov, sud est e ok, doar să avem o rută directă spre centură.
+
+[04:56] Andrei: Deci sud est nu e contra pentru tine.
+
+[04:59] Cristi: Nu. Dar vreau să mă asigur că avem spațiu pentru 25 de camioane pe zi, plus aprovizionarea cu făină. Asta înseamnă minimum două rampe de recepție și patru de expediție.
+
+[05:19] Bogdan: Dacă mergem pe Popești, putem face o zonă logistică separată pe latura estică. Ar trebui să proiectăm o alee internă cu dublu sens și un sens giratoriu mic pentru întoarcere. Terenul ar permite, dar trebuie să facem simulare de trafic.
+
+[05:41] Andrei: Bun, asta intră ca acțiune. Bogdan, ce cerințe tehnice majore trebuie să fixăm în concept?
+
+[05:50] Bogdan: În primul rând capacitatea. Pentru București propun o capacitate inițială de 120 de tone de produs pe zi, cu posibilitate de creștere la 160 prin adăugarea unui cuptor și a unei linii de dospire. Asta înseamnă două linii complete de producție cu mixere, divizoare, formare, dospire, coacere, răcire, feliere și ambalare. Apoi energie. Avem nevoie de putere instalată de aproximativ 2,5 megawați și de gaz natural pentru cuptoare, în jur de 1.800 de metri cubi pe oră la vârf. Și apă, cam 40 de metri cubi pe zi.
+
+[06:36] Cristi: Capacitatea de 120 tone pe zi îmi pare corectă. În București avem cerere mare pe pâine albă și pe specialități. Dar trebuie să ținem cont de două schimburi și de un posibil al treilea în sezon.
+
+[06:55] Bogdan: Tocmai. Layoutul îl facem pentru două schimburi, dar las spațiu în vestiare și cantină pentru până la 220 de oameni, ca să putem introduce al treilea schimb fără să reconstruim.
+
+[07:13] Andrei: Aici vreau să clarificăm. Cristi, câți oameni estimezi pentru pornire?
+
+[07:19] Cristi: La 120 tone pe zi, două schimburi, eu văd circa 160 de angajați în total: producție directă, mentenanță, calitate, logistică internă și birouri. Dintre aceștia, în producție directă vreo 90. Pe lansare vom avea nevoie de echipă de training din Ploiești și Cluj, vreo 12 oameni timp de două luni.
+
+[07:49] Andrei: Ok, deci în buget trebuie să includem relocări și diurne pentru colegii de training. Pun asta la costuri operaționale de lansare.
+
+[08:02] Bogdan: O observație: dacă mergem pe verticalizare la depozit, poate crește perioada de proiectare cu două trei săptămâni.
+
+[08:12] Andrei: Încercăm să evităm complicații dacă nu sunt strict necesare. Dar nu decid acum. Să vedem prima schiță de layout.
+
+[08:20] Cristi: Pentru fluxuri vreau să avem clar separare între zone curate și necurate. Recepția făinii și a materiilor prime să fie pe partea opusă față de expediție, iar traseele angajaților să nu traverseze depozitul de materii prime.
+
+[08:39] Bogdan: De acord. Standardul nostru HACCP cere culoare separate. În concept putem poziționa recepția în sud, producția în centru și expediția în nord. Așa am făcut și la Timișoara.
+
+[08:57] Andrei: Bun. Haideți să trecem pe timeline. Vreau să-l ieșim de aici cu repere clare. În decembrie 2025 suntem acum în faza de pre-fezabilitate, corect. Până la 31 ianuarie 2026 trebuie să alegem terenul preferat și să avem o ofertă fermă. Februarie îl folosim pentru concept tehnic și layout preliminar. Martie și aprilie pentru proiectare autorizabilă și avize, inclusiv certificat de urbanism, mediu, ISU, utilități. Mai finalizăm proiectul tehnic și lansăm licitația de constructor. Iunie semnăm contractul de execuție și mobilizăm organizarea de șantier. Construcția începe efectiv în iulie 2026. Sună realist?
+
+[09:45] Bogdan: Da, dar numai dacă nu avem surprize la avize. Pentru mediu și ISU avem nevoie de documentații solide și de studii. Dacă terenul are istoric industrial, studiul de sol și de poluare poate dura.
+
+[10:04] Cristi: Din partea mea, în paralel cu proiectarea, eu vreau să începem recrutarea pentru nucleul de management local în aprilie 2026. Adică șef de fabrică, șef de producție, șef de mentenanță, calitate. Ei trebuie să fie implicați măcar în ultimele luni de construcție, ca să cunoască instalațiile.
+
+[10:32] Andrei: Da, e bine. Notăm recrutare nucleu în aprilie. Bogdan, cât crezi că durează construcția propriu zisă?
+
+[10:41] Bogdan: Pentru o hală de circa 9.000 de metri pătrați plus anexele, eu estimez nouă luni de execuție până la clădire și utilități interne gata. Apoi încă două luni pentru montaj linii și probe tehnologice. Deci dacă începem în iulie 2026, termen de clădire martie 2027, iar pornire linie iunie 2027.
+
+[11:19] Cristi: Asta înseamnă că eu trebuie să am planul de training și ramp-up pentru aprilie mai iunie 2027. Și să avem deja oamenii angajați cu două luni înainte de pornire.
+
+[11:35] Andrei: Corect. Și asta trebuie comunicat boardului ca termen de operaționalizare: iunie 2027. Nu e o problemă, dar să fie clar.
+
+[11:46] Bogdan: Mai e un risc: disponibilitatea echipamentelor. Unele cuptoare industriale au termen de livrare de 24 până la 28 de săptămâni. Trebuie să comandăm cel târziu în octombrie 2026 ca să ajungă la timp pentru montaj în aprilie 2027.
+
+[12:10] Andrei: Bun, deci avem un milestone: selecție furnizori echipamente și comenzi până în octombrie 2026. Asta înseamnă că licitația pe echipamente trebuie lansată în iunie 2026 în paralel cu construcția.
+
+[12:28] Cristi: Și la echipamente să includem standardele noastre de mentenanță. Vreau să fie compatibile cu sistemele de la celelalte fabrici, altfel ne complicăm la piese și la training.
+
+[12:43] Bogdan: Sigur. O să folosim lista de furnizori agreați: Haberle pentru cuptoare și Rheon pentru linii de formare, dacă nu apar alternative mai bune la licitație.
+
+[12:58] Andrei: Ok. Să vorbim două minute despre buget. Bogdan, ai o defalcare grosieră?
+
+[13:06] Bogdan: Da. Terenul estimativ e între 2 și 3 milioane de euro, depinde de zonă. Construcția halei și utilităților interne, inclusiv instalații, cam 6 milioane. Echipamentele tehnologice pentru două linii, în jur de 5 milioane. Restul e pentru proiectare, avize, management, IT, mobilier și o rezervă de risc. Ne încadrăm în 15 milioane dacă nu apar costuri neprevăzute la utilități externe.
+
+[13:40] Cristi: Din operațiuni, eu mai adaug costuri pentru laborator de calitate și pentru sistemul WMS din depozit. La Iași am cheltuit aproape 250 de mii pe asta. Să le includem de la început.
+
+[13:57] Andrei: Inclus. Mă asigur că intră în capex. Mai avem și costuri de conectare la rețele. Bogdan, pentru Popești ai o estimare?
+
+[14:08] Bogdan: Preliminar, racordul electric ar fi 120 de mii, racordul la gaz 180 de mii dacă e aproape, iar la apă și canalizare 70 de mii. Dacă terenul e în Chitila, gazul ar crește poate spre 400 de mii pentru că trebuie extinsă conducta.
+
+[14:31] Andrei: Ok, asta înclină balanța spre Popești. Dar să nu decidem doar pe cost. Să vedem și contractul de teren.
+
+[14:41] Cristi: Aș vrea să discutăm și despre produse. Dacă facem prima fabrică din București, ar fi bine să integrăm și o mică linie de specialități artizanale, pentru retail local. Avem cerere mare în București pe pâine cu semințe și pe rulouri. Dacă avem spațiu pentru o linie semi automată de 10 tone pe zi, ne diferențiem.
+
+[15:12] Bogdan: Tehnic e posibil, dar costă și ne complică layoutul. Ar însemna o a treia zonă de coacere cu cuptoare mai mici și alt tip de dospire.
+
+[15:27] Andrei: Nu vreau să avem scope creep acum. Propun să planificăm infrastructura astfel încât să putem adăuga linia de specialități în faza a doua, după pornire. Adică să lăsăm spațiu și conexiuni.
+
+[15:45] Cristi: Ok, sunt de acord, atâta timp cât nu blocăm posibilitatea.
+
+[15:50] Bogdan: Putem lăsa o zonă neutră de 500 de metri pătrați lângă expediție, cu utilități pregătite. O ținem ca opțiune.
+
+[16:06] Andrei: Perfect. Asta e o decizie: faza unu două linii standard 120 tone pe zi, cu pregătire pentru linie specialități în faza a doua.
+
+[16:21] Cristi: Mai am o cerință: să ne gândim la vizitare și traseu pentru clienți sau autorități. În București probabil vom avea mai multe audituri. Dacă includem un coridor de vizitare și o sală mică de prezentare, ne ajută.
+
+[16:43] Bogdan: Da, am prevăzut la intrarea principală un hol cu geam spre producție și un culoar suspendat. Nu e mare cost, dar trebuie inclus în proiectare de la început.
+
+[16:58] Andrei: Ok, include-l în concept.
+
+[17:02] Andrei: Acum, riscuri. Eu văd trei mari: achiziția terenului, avizele și prețurile la construcții. Bogdan, ai altceva?
+
+[17:15] Bogdan: Da, mai e riscul de capacitate la utilități. În unele zone din sud est, rețeaua electrică e încărcată. Trebuie confirmare de la distribuitor că ne pot da 2,5 megawați. Dacă nu, trebuie post de transformare propriu și asta durează.
+
+[17:38] Andrei: Bun, acțiune: verificare capacitate electrică imediat după preselectarea terenului.
+
+[17:45] Cristi: Din partea mea, risc de recrutare. Bucureștiul are concurență mare pe piața muncii. Dacă nu începem devreme, ne trezim fără brutari și tehnicieni. Aș vrea să avem un plan de employer branding și parteneriate cu școli profesionale.
+
+[18:10] Andrei: Corect. Îl punem ca acțiune pentru trimestru doi 2026 să pregătim recrutarea masivă.
+
+[18:20] Bogdan: Mai e și riscul de zgomot și trafic. Vecinii pot depune contestații la avizul de mediu dacă nu avem plan bun.
+
+[18:31] Cristi: Atunci să proiectăm și o zonă tampon verde și să programăm livrările mari noaptea doar când e permis.
+
+[18:42] Andrei: Ok, includem în studiul de mediu și în planul logistic.
+
+[18:47] Andrei: Să revenim la teren. Eu propun următorul pas: mergem înainte cu Popești ca opțiune principală și Dragomirești ca backup. Vreau ca până săptămâna viitoare să avem vizită pe teren cu proprietarii și cu un topograf. Bogdan, coordonezi?
+
+[19:10] Bogdan: Da, mă ocup. Fac programarea și iau cu mine pe cineva de la geotehnică să vadă preliminar.
+
+[19:19] Cristi: Vin și eu, vreau să mă uit la accesul pentru camioane și la vecinătăți.
+
+[19:25] Andrei: Super. În paralel, eu discut cu legalul să pregătească checklistul de due diligence și draftul de promisiune de vânzare.
+
+[19:39] Bogdan: Ar fi bine să cerem și un istoric de utilități de la primărie, să știm exact traseele.
+
+[19:47] Andrei: Notat, îl cerem după vizită.
+
+[19:51] Cristi: Pot să încep să lucrez la specificațiile operaționale pentru fabrică. Ca să nu fie doar tehnic. Adică lista de spații: producție, depozite, vestiare, birouri, laborator, cantină, flux de vizitare.
+
+[20:10] Andrei: Perfect. Îmi trimiți un draft până pe 20 ianuarie 2026, ca să intre în concept.
+
+[20:19] Cristi: Da, îl fac.
+
+[20:22] Bogdan: Eu voi face o schiță de layout preliminar pentru Popești, cu trei variante de amplasare. O pot avea până la început de februarie.
+
+[20:36] Andrei: Bun. Asta se potrivește cu calendarul nostru.
+
+[20:40] Andrei: Mai avem cinci minute. Vreau să clarificăm comunicarea către board. Eu voi trimite un update săptămâna viitoare cu recomandarea de teren, timelineul și costurile. Am nevoie de la voi două lucruri: Bogdan, un rezumat tehnic cu avantajele și riscurile pentru Popești și Dragomirești; Cristi, un rezumat operațional cu capacitate, personal estimat și plan de lansare.
+
+[21:10] Bogdan: Îți trimit mâine, o pagină, cu datele și cu riscurile de utilități și urbanism.
+
+[21:18] Cristi: Și eu îți trimit mâine. Menționez și ideea cu faza doi pentru specialități și traseu de vizitare.
+
+[21:28] Andrei: Perfect.
+
+[21:31] Andrei: Ca decizii de azi, notez așa: unu, direcția de teren: Popești Leordeni opțiune principală, Dragomirești backup. Doi, capacitate faza unu: 120 tone pe zi, două linii standard, cu pregătire pentru extindere și linie specialități în faza doi. Trei, timeline: selectare teren până la 31 ianuarie 2026, concept tehnic până în februarie, autorizare martie aprilie, proiect tehnic și licitație constructor în mai, contract iunie, start construcție iulie 2026. Patru, termen de operaționalizare estimat iunie 2027. Cinci, licitație echipamente în iunie 2026 și comenzi până în octombrie 2026. Sunteți de acord?
+
+[22:26] Bogdan: Da, sunt de acord.
+
+[22:28] Cristi: De acord și eu.
+
+[22:31] Andrei: Super. Acțiuni: Bogdan, coordonezi vizita pe teren săptămâna viitoare și schița de layout până la început de februarie, plus rezumat pentru board mâine. Cristi, participi la vizită, faci specificațiile operaționale până pe 20 ianuarie și rezumat maine. Eu: legal due diligence și update către board. Mai lipsește ceva?
+
+[23:03] Bogdan: Nu, asta e tot din partea mea.
+
+[23:06] Cristi: Și din partea mea e ok.
+
+[23:08] Andrei: Atunci încheiem. Mulțumesc, ne auzim după vizita pe teren.

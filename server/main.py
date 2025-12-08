@@ -13,23 +13,6 @@ def index():
     return render_template("index.html")
 
 
-# @app.route("/test", methods=["POST"])
-# def test():
-#     data = request.get_json()
-
-#     if not data:
-#         return "data missing"
-
-#     if not data["recipients"]:
-#         return "recipients missing"
-
-#     if not data["meeting"]:
-#         return "meeting missing"
-
-#     print("data: ", data)
-#     return "raw_emails"
-
-
 @app.route("/summarize", methods=["POST"])
 def summarize():
     data = request.get_json()

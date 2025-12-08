@@ -43,6 +43,7 @@
     textarea {
       width: 100%;
       padding: 0.75rem;
+      box-sizing: border-box;
       margin-top: 0.25rem;
       border: 1px solid var(--border);
       border-radius: 4px;
@@ -93,7 +94,10 @@
 
 <body>
   <div class="container">
-    <h1>Summarize Meeting</h1>
+    <h1>Generate meeting summary</h1>
+    <!-- Message that appears after clicking submit -->
+    <div id="status">Your summary is being generated. You will receive an email shortly.</div>
+    <div id="statusError">Something went wrong</div>
     <form id="summaryForm" method="post" action="{{ url_for('summarize') }}">
       <label for="emails">
         Recipient e‑mails (comma / semicolon / newline separated)
@@ -108,10 +112,6 @@
 
       <button type="submit">Submit</button>
     </form>
-
-    <!-- Message that appears after clicking submit -->
-    <div id="status">Your summary is being generated. You will receive an email shortly.</div>
-    <div id="statusError">Something went wrong</div>
   </div>
 
   <!-- ----------------- JavaScript ----------------- -->
