@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Summarize Meeting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ------------- Minimal, clean CSS (uses #a6eda8) ------------- -->
+  <style>
+    :root {
+      --primary: #a6eda8;
+      --bg: #f9f9f9;
+      --text: #333;
+      --border: #ddd;
+      --shadow: rgba(0,0,0,0.1);
+    }
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+    h1 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.25rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-size: 1rem;
+      background: #fff;
+    }
+    textarea { resize: vertical; min-height: 200px; }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.25s;
+    }
+    button:hover { background: #96d595; }
+
+    /* ---------- status message styling ---------- */
+    #status {
+      margin-top: 1.5rem;
+      padding: 0.75rem;
+      background: #e6f7e6;   /* light green */
+      border-left: 4px solid var(--primary);
+      font-weight: 500;
+      color: #2b7a2b;
+      display: none;          /* hidden until shown */
+    }
+
+    #statusError {
+        color: white;
+        background: red;  
+        border-left: 4px solid orangered;
+        margin-top: 1.5rem;
+        padding: 0.75rem;
+        font-weight: 500;
+        display: none;          /* hidden until shown */
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 1rem; }
+      .container { padding: 1.5rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Summarize Meeting</h1>
+    <form id="summaryForm" method="post" action="{{ url_for('summarize') }}">
+      <label for="emails">
+        Recipient e‑mails (comma / semicolon / newline separated)
+      </label>
+      <input type="text" id="emails" name="emails"
+             placeholder="alice@example.com, bob@example.com" required>
+
+      <label for="transcript">Meeting transcript</label>
+      <textarea id="transcript" name="transcript"
+                placeholder="Paste the full meeting transcript here..."
+                required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Message that appears after clicking submit -->
+    <div id="status">Your summary is being generated. You will receive an email shortly.</div>
+    <div id="statusError">Something went wrong</div>
+  </div>
+
+  <!-- ----------------- JavaScript ----------------- -->
+  <script>
+  // Grab the elements we’ll touch
+  const form   = document.getElementById('summaryForm');
+  const status = document.getElementById('status');
+  const statusError = document.getElementById('statusError');
+  const btn    = form.querySelector('button');
+
+  // ------------------------------------------------------------------
+  // Utility: turn a raw e‑mail string into an array
+  // ------------------------------------------------------------------
+  function parseEmails(raw) {
+    // 1) replace new‑lines, semicolons and optional spaces with a comma
+    let cleaned = raw.replace(/\s*\n\s*/g, ",").replace(/\s*;\s*/g, ",");
+    // 2) split on commas, trim each, filter out empties
+    return cleaned.split(",").map(e => e.trim()).filter(Boolean);
+  }
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();                // stay on the same page
+
+    btn.disabled = true;               // prevent double‑click
+
+    /* -----------------  Build the JSON payload  ------------------ */
+    const payload = {
+      recipients:  parseEmails(form.querySelector('#emails').value),
+      meeting: form.querySelector('#transcript').value
+    };
+
+    try {
+      // Send the JSON to Flask
+      const resp = await fetch(form.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      const data = await resp;
+      if (data.status === 200) {
+        console.log('Server responded with:', data);
+        status.style.display = 'block';  
+      } else {
+        throw new Error('bad status')
+      }
+      
+    } catch (err) {
+      console.error('Network / server error:', err);
+      statusError.style.display = 'block';  
+
+    } finally {
+        btn.disabled = false;          
+        form.reset();
+        setTimeout(() => status.style.display = 'none', 25000);
+    }
+  });
+</script>
+
+</body>
+</html>

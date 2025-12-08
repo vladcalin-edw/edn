@@ -1,29 +1,33 @@
 import threading
 
-from flask import Flask, request
+from flask import Flask, request, render_template
 
-from services import EmailService, SummarizeService
+from services import SummarizeService
 
 
 app = Flask(__name__)
 
 
-# For dev purposes
-# @app.route("/mail", methods=["POST"])
-# def handle_mail():
+@app.route("/", methods=["GET"])
+def index():
+    return render_template("index.html")
 
-#     pdf_file = None
 
-#     with app.open_resource("summaries/1764829519.2568572.pdf") as pdf:
-#         pdf_file = pdf.read()
+# @app.route("/test", methods=["POST"])
+# def test():
+#     data = request.get_json()
 
-#     if not pdf_file:
-#         return "pdf missing"
+#     if not data:
+#         return "data missing"
 
-#     email_service = EmailService(app)
-#     email_service.send(["calinvladth@icloud.com"], pdf_file)
+#     if not data["recipients"]:
+#         return "recipients missing"
 
-#     return "ok"
+#     if not data["meeting"]:
+#         return "meeting missing"
+
+#     print("data: ", data)
+#     return "raw_emails"
 
 
 @app.route("/summarize", methods=["POST"])
