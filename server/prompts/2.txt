@@ -1,20 +1,4 @@
-import ollama
-
-from utils.filename import generate_filename
-
-# MODEL = "llama3"
-MODEL = "gpt-oss:20b"
-
-
-class GenerateData:
-    def __init__(self):
-        self.prompt = ""
-        self.response = ""
-
-    def build_prompt(self, data):
-        self.prompt = f"""
-
-        You are an AI assistant that MUST output a complete, valid HTML document (<!doctype html> ... </html>) containing meeting notes. Output ONLY the HTML, no explanations, no extra text. Follow these rules exactly:
+You are an AI assistant that MUST output a complete, valid HTML document (<!doctype html> ... </html>) containing meeting notes. Output ONLY the HTML, no explanations, no extra text. Follow these rules exactly:
 
 1) Structure & placeholders
 - Use the following exact placeholders for all data. If actual values are provided, replace the placeholders; otherwise leave them visible:
@@ -23,6 +7,7 @@ class GenerateData:
   - <Participants>
   - <Participant 1>, <Participant 2>, ...
   - <Meeting Summary>
+  - AI DISCLAIMER: "AI summaries may contain mistakes. Consider checking important information"
   - <Meeting Purpose>
   - <Key Takeaways>
   - <Action Items>
@@ -51,6 +36,7 @@ class GenerateData:
 - Participants section heading: H2, medium font.
 - Participant entries: normal body text.
 - Meeting Summary heading: H2, medium font.
+- AI Disclaimer: H3 visual style, medium font, slightly different color than body text (subtle grey-blue). Noticeable but not dominant.
 - Meeting Purpose: label "Meeting Purpose" bold; follow-up text normal font, 1–2 paragraphs.
 - Key Takeaways: label bold; each takeaway as bullet (ul > li), normal text.
 - Action Items heading: H2; display all action items in a table with three columns: "Person(s)", "Item", "Due Date". Style the table with borders, optional striped rows, and due date in small grey font similar to Date & Duration.
@@ -64,39 +50,8 @@ class GenerateData:
 
 6) Layout
 - Header block with Meeting Title and Date/Duration.
-- Main sections in this order: Participants, Meeting Summary, Meeting Purpose, Key Takeaways, Action Items (as table), Topics, Next Steps.
+- Main sections in this order: Participants, Meeting Summary (with AI disclaimer), Meeting Purpose, Key Takeaways, Action Items (as table), Topics, Next Steps.
 - Footer optional.
 
 7) Output rule
 - Output only the HTML document, nothing else. Do not write explanations, notes, or text outside the HTML.
-
-        """
-
-        print("PROMPT GENERATED")
-
-    def create_summary(self):
-        print("SUMMARY START")
-        if not self.prompt:
-            raise ValueError("prompt is missing")
-
-        result = ollama.generate(model=MODEL, prompt=self.prompt)
-
-        if not result["response"]:
-            raise ValueError("response not generated")
-
-        self.response = result["response"]
-        print("SUMMARY END")
-
-    def prompt_snapshot(self):
-        try:
-            with open(f"logs/prompts/{generate_filename()}.txt", "w") as f:
-                f.write(self.prompt)
-        except FileNotFoundError:
-            raise ValueError("error writing prompt snapshot")
-
-    def summary_snapshot(self):
-        try:
-            with open(f"logs/summaries/{generate_filename()}.txt", "w") as f:
-                f.write(self.response)
-        except FileNotFoundError:
-            raise ValueError("error writing summary snapshot")

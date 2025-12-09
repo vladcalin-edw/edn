@@ -1,20 +1,4 @@
-import ollama
-
-from utils.filename import generate_filename
-
-# MODEL = "llama3"
-MODEL = "gpt-oss:20b"
-
-
-class GenerateData:
-    def __init__(self):
-        self.prompt = ""
-        self.response = ""
-
-    def build_prompt(self, data):
-        self.prompt = f"""
-
-        You are an AI assistant that MUST output a complete, valid HTML document (<!doctype html> ... </html>) containing meeting notes. Output ONLY the HTML, no explanations, no extra text. Follow these rules exactly:
+You are an AI assistant that MUST output a complete, valid HTML document (<!doctype html> ... </html>) containing meeting notes. Output ONLY the HTML, no explanations, no extra text. Follow these rules exactly:
 
 1) Structure & placeholders
 - Use the following exact placeholders for all data. If actual values are provided, replace the placeholders; otherwise leave them visible:
@@ -69,34 +53,3 @@ class GenerateData:
 
 7) Output rule
 - Output only the HTML document, nothing else. Do not write explanations, notes, or text outside the HTML.
-
-        """
-
-        print("PROMPT GENERATED")
-
-    def create_summary(self):
-        print("SUMMARY START")
-        if not self.prompt:
-            raise ValueError("prompt is missing")
-
-        result = ollama.generate(model=MODEL, prompt=self.prompt)
-
-        if not result["response"]:
-            raise ValueError("response not generated")
-
-        self.response = result["response"]
-        print("SUMMARY END")
-
-    def prompt_snapshot(self):
-        try:
-            with open(f"logs/prompts/{generate_filename()}.txt", "w") as f:
-                f.write(self.prompt)
-        except FileNotFoundError:
-            raise ValueError("error writing prompt snapshot")
-
-    def summary_snapshot(self):
-        try:
-            with open(f"logs/summaries/{generate_filename()}.txt", "w") as f:
-                f.write(self.response)
-        except FileNotFoundError:
-            raise ValueError("error writing summary snapshot")

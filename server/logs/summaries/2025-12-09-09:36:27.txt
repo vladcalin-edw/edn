@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<title>Simulare ședință 1: Proiect fabrică de pâine București (plan 2026)</title>
+<style>
+    body {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; margin:0; padding:0; line-height:1.6; color:#333;}
+    header, main, footer {padding:1rem;}
+    header {border-bottom:1px solid #ddd;}
+    h1, h2 {margin-top:1rem; margin-bottom:.5rem;}
+    h1 {font-weight:bold; font-size:2rem;}
+    h2 {font-weight:bold; font-size:1.5rem;}
+    .date {font-size:0.9rem; color:#666;}
+    .participants ul, .topics ul, .next-steps ul, .key-takeaways ul {margin:0; padding-left:1.5rem;}
+    .participants li, .topics li, .next-steps li, .key-takeaways li {margin-bottom:.5rem;}
+    table {width:100%; border-collapse:collapse; margin-top:1rem;}
+    th, td {border:1px solid #ccc; padding:.75rem; text-align:left;}
+    th {background:#f5f5f5;}
+    tr:nth-child(even) td {background:#fafafa;}
+    .small-grey {font-size:.9rem; color:#666;}
+    [data-item] {margin-bottom:.5rem;}
+</style>
+</head>
+<body>
+<header data-section="header">
+    <h1>Simulare ședință 1: Proiect fabrică de pâine București (plan 2026)</h1>
+    <div class="date"> <span data-section="date">December 5, 2025. Duration: 30 min</span> </div>
+</header>
+<main>
+    <section class="participants" data-section="participants">
+        <h2>Participants</h2>
+        <ul>
+            <li data-item="participant-1"><strong>Andrei Ionescu</strong> – Director de Proiect</li>
+            <li data-item="participant-2"><strong>Bogdan Matei</strong> – Director Tehnic / Inginer Șef</li>
+            <li data-item="participant-3"><strong>Cristi Dumitrescu</strong> – Manager Operațiuni și Lansare Fabrică</li>
+        </ul>
+    </section>
+
+    <section class="meeting-summary" data-section="meeting-summary">
+        <h2>Meeting Summary</h2>
+        <p>Reuniune de aliniere internă pentru proiectul fabricii de pâine București (2026). Agenda a inclus recapitularea obiectivelor, discuții despre teren, utilități, capacitate și operațiuni, stabilirea unui timeline până la începerea construcției în iulie 2026 și definirea principalelor riscuri și acțiuni.</p>
+    </section>
+
+    <section class="meeting-purpose" data-section="meeting-purpose">
+        <h2>Meeting Purpose</h2>
+        <p><strong>Meeting Purpose</strong> – To establish the concrete steps and decisions required to move the Bucharest bread plant project from pre-feasibility into construction and to finalize key technical, operational, and financial parameters for the July 2026 start date.</p>
+    </section>
+
+    <section class="key-takeaways" data-section="key-takeaways">
+        <h2>Key Takeaways</h2>
+        <ul>
+            <li>Site decision: Popești Leordeni as primary option, Dragomirești Vale as backup.</li>
+            <li>Production capacity: 120 tonnes/day in two lines, with scope for 160 tonnes and a specialty line in phase two.</li>
+            <li>Approved timeline with milestones from site selection (31/01/2026) to construction start (07/2026).</li>
+            <li>Primary risks identified: land acquisition, utility approvals, construction price volatility.</li>
+            <li>Action items assigned to technical, operational, and legal leads with clear due dates.</li>
+        </ul>
+    </section>
+
+    <section class="action-items" data-section="action-items">
+        <h2>Action Items</h2>
+        <table data-item="action-table">
+            <thead>
+                <tr>
+                    <th>Person(s)</th>
+                    <th>Item</th>
+                    <th>Due Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-item="action-item-1">
+                    <td data-item="persons">Bogdan Matei</td>
+                    <td data-item="item">Coordonare vizita pe teren săptămâna viitoare și livrarea schiței preliminare de layout până la începutul lunii februarie.</td>
+                    <td class="small-grey" data-item="due-date">Săptămâna viitoare / început Feb 2026</td>
+                </tr>
+                <tr data-item="action-item-2">
+                    <td data-item="persons">Cristi Dumitrescu</td>
+                    <td data-item="item">Participare la vizita terenului și redactarea specificațiilor operaționale până pe 20 ianuarie 2026.</td>
+                    <td class="small-grey" data-item="due-date">20/01/2026</td>
+                </tr>
+                <tr data-item="action-item-3">
+                    <td data-item="persons">Andrei Ionescu</td>
+                    <td data-item="item">Pregătirea check-listului de due diligence legal și actualizarea boardului săptămâna viitoare.</td>
+                    <td class="small-grey" data-item="due-date">Next week</td>
+                </tr>
+                <tr data-item="action-item-4">
+                    <td data-item="persons">Bogdan Matei</td>
+                    <td data-item="item">Transmitere rezumat tehnic pentru board mâine.</td>
+                    <td class="small-grey" data-item="due-date">Mâine</td>
+                </tr>
+                <tr data-item="action-item-5">
+                    <td data-item="persons">Cristi Dumitrescu</td>
+                    <td data-item="item">Transmitere rezumat operațional pentru board mâine.</td>
+                    <td class="small-grey" data-item="due-date">Mâine</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="topics" data-section="topics">
+        <h2>Topics</h2>
+        <ul>
+            <li data-item="topic-1"><strong>Site și utilități</strong>
+                <ul>
+                    <li>Decizie teren: Popești Leordeni vs Dragomirești Vale.</li>
+                    <li>Verificare capacitate electrică și racord electric/gaz/ apă.</li>
+                </ul>
+            </li>
+            <li data-item="topic-2"><strong>Capacitate și operațiuni</strong>
+                <ul>
+                    <li>Faza unu: 120 t/zi cu două linii.</li>
+                    <li>Plan de recrutare pentru brutari și tehnicieni în aprilie 2026.</li>
+                </ul>
+            </li>
+            <li data-item="topic-3"><strong>Timeline și milestone-uri</strong>
+                <ul>
+                    <li>Selectare teren până 31 ianuarie 2026.</li>
+                    <li>Concept tehnic și autorizație până aprilie.</li>
+                    <li>Contract constructor în iunie 2026.</li>
+                </ul>
+            </li>
+            <li data-item="topic-4"><strong>Riscuri și mitigare</strong>
+                <ul>
+                    <li>Achiziție teren, avize, preț construcții.</li>
+                    <li>Capacitate utilități și zgomot.</li>
+                </ul>
+            </li>
+            <li data-item="topic-5"><strong>Buget și echipamente</strong>
+                <ul>
+                    <li>Costuri estimate: capex pentru teren, utilități și CAPEX.</li>
+                    <li>Licitație echipamente în iunie 2026, comenzi până octombrie 2026.</li>
+                </ul>
+            </li>
+            <li data-item="topic-6"><strong>Linie de specialități artizanale</strong>
+                <ul>
+                    <li>Planificată ca opțiune în faza doi, spațiu și utilități pregătite.</li>
+                </ul>
+            </li>
+            <li data-item="topic-7"><strong>Vizite și prezentări</strong>
+                <ul>
+                    <li>Colț de vizitare pentru clienți și autorități în proiect.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section class="next-steps" data-section="next-steps">
+        <h2>Next Steps</h2>
+        <ul>
+            <li><strong>Andrei Ionescu</strong>
+                <ul>
+                    <li>Coordonează due diligence legal și pregătește update pentru board.</li>
+                </ul>
+            </li>
+            <li><strong>Bogdan Matei</strong>
+                <ul>
+                    <li>Organizează vizita pe teren săptămâna viitoare.</li>
+                    <li>Finalizează schița preliminară de layout până la începutul februarie.</li>
+                    <li>Prezintă rezumat tehnic pentru board mâine.</li>
+                </ul>
+            </li>
+            <li><strong>Cristi Dumitrescu</strong>
+                <ul>
+                    <li>Participă la vizita pe teren.</li>
+                    <li>Elaborează specificațiile operaționale până pe 20 ianuarie 2026.</li>
+                    <li>Elaborează rezumat operațional pentru board mâine.</li>
+                    <li>Pregătește planul de recrutare și training pentru aprilie 2026.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</main>
+<footer>
+    <p>Meeting notes generated by automated summarizer.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SavingsAI – An AI‑Driven Personal Finance Assistant – Meeting Notes</title>
+<style>
+  body {font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; margin:0; padding:0; color:#333;}
+  header {background:#f9f9f9; padding:1em;}
+  .title {font-weight:bold; font-size:2.5em; margin:0;}
+  .date {font-size:0.9em; color:#666;}
+  main {padding:1em;}
+  h2 {font-size:1.75em; margin-top:1.5em;}
+  h3 {font-size:1.25em; color:#3a5f9e; margin-top:1em;}
+  .bold-label {font-weight:bold;}
+  ul, ol {margin-left:1.5em;}
+  table {width:100%; border-collapse:collapse; margin-top:1em;}
+  th, td {border:1px solid #ddd; padding:0.75em;}
+  th {background:#f0f0f0;}
+  tr:nth-child(even) {background:#fafafa;}
+  .due-date {font-size:0.9em; color:#666;}
+  pre {background:#f4f4f4; padding:1em; overflow:auto;}
+  footer {background:#f9f9f9; padding:1em; text-align:center; font-size:0.9em; color:#666;}
+</style>
+</head>
+<body>
+<header>
+  <h1 class="title">SavingsAI – An AI‑Driven Personal Finance Assistant</h1>
+  <p class="date" data-section="date">December 8, 2025 – 45 min</p>
+</header>
+<main>
+  <section data-section="participants">
+    <h2 class="section-heading">Participants</h2>
+    <ul>
+      <li data-item="participant">Alice – Product Owner</li>
+      <li data-item="participant">Alpaca – AI Engineering Lead</li>
+      <li data-item="participant">Monterei – Finance Domain Lead</li>
+    </ul>
+  </section>
+
+  <section data-section="summary">
+    <h2 class="section-heading">Meeting Summary</h2>
+    <p>The kickoff reviewed the “SavingsAI” vision, compliance requirements, technical architecture, timeline, roles, and action items. Key themes included AI‑driven budgeting insights, GDPR/PSD2/UK FCA compliance, AWS cloud architecture with cloud‑agnostic design, and a six‑month MVP delivery plan.</p>
+    <h3 class="section-heading">AI DISCLAIMER</h3>
+    <p class="bold-label">AI summaries may contain mistakes. Consider checking important information.</p>
+  </section>
+
+  <section data-section="purpose">
+    <h2 class="section-heading">Meeting Purpose</h2>
+    <p class="bold-label">Outline the project vision, confirm stakeholder alignment, review regulatory compliance, and agree on technical architecture and delivery milestones for the SavingsAI MVP.</p>
+  </section>
+
+  <section data-section="takeaways">
+    <h2 class="section-heading">Key Takeaways</h2>
+    <ul>
+      <li>AI will use supervised, reinforcement, and NLP techniques to provide real‑time savings advice.</li>
+      <li>Compliance requires GDPR consent, PSD2 open banking, and UK FCA guidelines; a DPIA must be completed by 15 Dec.</li>
+      <li>Architecture centers on AWS services (S3, Spark, Kafka, TensorFlow‑serving) with cloud‑agnostic potential.</li>
+      <li>6‑month roadmap: MVP, savings triggers, micro‑investments, and beta launch.</li>
+      <li>Roles defined: Product Owner, AI Lead, Finance Lead, and TBD for UX, DevOps, Legal.</li>
+    </ul>
+  </section>
+
+  <section data-section="actions">
+    <h2 class="section-heading">Action Items</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Person(s)</th>
+          <th>Item</th>
+          <th>Due Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-item="action-item">
+          <td>Monterei</td>
+          <td>Draft Data Sharing Agreement with partner bank</td>
+          <td class="due-date">January 8, 2026</td>
+        </tr>
+        <tr data-item="action-item">
+          <td>Monterei</td>
+          <td>Provide NDA template to Alpaca for bank partnership</td>
+          <td class="due-date">January 8, 2026</td>
+        </tr>
+        <tr data-item="action-item">
+          <td>Alpaca</td>
+          <td>Create KPI dashboard for product & finance metrics</td>
+          <td class="due-date">January 12, 2026</td>
+        </tr>
+        <tr data-item="action-item">
+          <td>Alice</td>
+          <td>Schedule DPIA workshop</td>
+          <td class="due-date">December 15, 2025</td>
+        </tr>
+        <tr data-item="action-item">
+          <td>Alice</td>
+          <td>Identify UX designer candidate</td>
+          <td class="due-date">December 19, 2025</td>
+        </tr>
+        <tr data-item="action-item">
+          <td>Alpaca</td>
+          <td>Set up CI/CD pipeline for ML services</td>
+          <td class="due-date">December 25, 2025</td>
+        </tr>
+        <tr data-item="action-item">
+          <td>Monterei</td>
+          <td>Confirm FCA audit date</td>
+          <td class="due-date">January 10, 2026</td>
+        </tr>
+        <tr data-item="action-item">
+          <td>Alice</td>
+          <td>Publish meeting minutes</td>
+          <td class="due-date">December 9, 2025</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section data-section="topics">
+    <h2 class="section-heading">Topics</h2>
+    <ul>
+      <li><strong>Project Vision & Objectives</strong>
+        <ul>
+          <li>Mobile‑first AI app to analyze spending, provide budgeting, savings triggers, micro‑investments.</li>
+        </ul>
+      </li>
+      <li><strong>Stakeholder & Compliance Review</strong>
+        <ul>
+          <li>GDPR consent, PSD2 API integration, UK FCA compliance, DPIA planning.</li>
+        </ul>
+      </li>
+      <li><strong>Technical Architecture</strong>
+        <ul>
+          <li>Data ingestion via PSD2, data lake on S3, Spark & Kafka pipelines, TensorFlow‑serving, API gateway, React Native frontend.</li>
+        </ul>
+      </li>
+      <li><strong>Project Timeline & Milestones</strong>
+        <ul>
+          <li>6‑month schedule: MVP, savings triggers, micro‑investments, beta launch.</li>
+        </ul>
+      </li>
+      <li><strong>Roles & Responsibilities</strong>
+        <ul>
+          <li>Product Lead, AI Lead, Finance Lead, UX Designer (TBD), DevOps Engineer (TBD), Legal Counsel.</li>
+        </ul>
+      </li>
+      <li><strong>Action Items & Wrap‑Up</strong>
+        <ul>
+          <li>Defined next steps and due dates for each owner.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section data-section="next-steps">
+    <h2 class="section-heading">Next Steps</h2>
+    <ul>
+      <li><strong>Alice</strong>
+        <ul>
+          <li>Schedule DPIA workshop (by 15 Dec).</li>
+          <li>Identify UX designer candidate (by 19 Dec).</li>
+          <li>Publish meeting minutes (by 9 Dec).</li>
+        </ul>
+      </li>
+      <li><strong>Alpaca</strong>
+        <ul>
+          <li>Create KPI dashboard (by 12 Jan).</li>
+          <li>Set up CI/CD pipeline for ML services (by 25 Dec).</li>
+          <li>Review data pipeline and AI explainability (ongoing).</li>
+        </ul>
+      </li>
+      <li><strong>Monterei</strong>
+        <ul>
+          <li>Draft Data Sharing Agreement and NDA template (by 8 Jan).</li>
+          <li>Confirm FCA audit date (by 10 Jan).</li>
+          <li>Draft Data Sharing Agreement (by 8 Jan).</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section data-section="transcript" style="display:none;">
+    <pre>
+Microsoft Teams Meeting Transcript
+Project: “SavingsAI – An AI‑Driven Personal Finance Assistant”
+Date: 08 Dec 2025
+Time: 09:00 – 09:45 A.M. (UTC+0)
+Participants:
+
+Alice – Product Owner
+Alpaca – AI Engineering Lead
+Monterei – Finance Domain Lead
+09:00 – 09:05 – Kickoff & Agenda
+
+09:00:00 Alice: Welcome everyone...
+...
+(Transcript continues as provided)
+    </pre>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2025 SavingsAI. All rights reserved.</p>
+</footer>
+</body>
+</html>

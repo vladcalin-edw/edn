@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Meeting Title></title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #4CAF50;
+            padding: .5rem;
+            text-align: center;
+        }
+        
+        /* Main section styles */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+        
+        /* Table styles */
+        table {
+            border-collapse: collapse;
+        }
+        
+        td, th {
+            border: 1px solid #ddd;
+            padding: .5rem;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><Meeting Title></h1>
+        <time datetime="December 5, 2025" class="date-duration">December 5, 2025. Duration (when known)</time>
+    </header>
+    <main>
+        <section>
+            <h2>Participants</h2>
+            <ul>
+                <li><Participant 1></li>
+                <li><Participant 2></li>
+                <!-- Add more participants -->
+            </ul>
+        </section>
+        <section>
+            <h2>Meeting Summary</h2>
+            <p><Meeting Summary></p>
+            <h3.AI Disclaimer: "AI summaries may contain mistakes. Consider checking important information"</h3>
+        </section>
+        <section>
+            <h2>Meeting Purpose</h2>
+            <label>Meeting Purpose:</label>
+            <p>Meet to discuss the project and its objectives.</p>
+        </section>
+        <section>
+            <h2 Key Takeaways:</h2>
+            <ul>
+                <li>• User Retention: Increase average session time by 25% through engaging insights.</li>
+                <li>• Savings Impact: Help users save at least 10% of their disposable income in the first 3 months.</li>
+                <!-- Add more key takeaways -->
+            </ul>
+        </section>
+        <section>
+            <h2>Action Items:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Person(s)</th>
+                        <th>Item</th>
+                        <th>Due Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><Draft Data Sharing Agreement with partner bank – Monterei – 08 Jan</td>
+                        <td>Data Sharing Agreement</td>
+                        <td>08 Jan</td>
+                    </tr>
+                    <tr>
+                        <td>Provide NDA template to Alpaca for bank partnership – Monterei – 08 Jan</td>
+                        <td>NDA Template</td>
+                        <td>08 Jan</td>
+                    </tr>
+                    <!-- Add more action items -->
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Topics:</h2>
+            <ul>
+                <li><b>SavingsAI Project Overview</b>
+                    <p>This project aims to develop an AI-powered finance app that helps users save money.</p>
+                </li>
+                <!-- Add more topics -->
+            </ul>
+        </section>
+        <section>
+            <h2>Next Steps:</h2>
+            <ul>
+                <li><b>Alice</b>: Schedule DPIA workshop – Alice – 15 Dec</li>
+                <li><b>Alpaca</b>: Set up CI/CD pipeline for ML services – Alpaca – 25 Dec</li>
+                <!-- Add more next steps -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>

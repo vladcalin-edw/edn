@@ -12,14 +12,16 @@ class SummarizeService:
             # Generate summary
             generate_data = GenerateData()
             generate_data.build_prompt(self.data)
+            generate_data.prompt_snapshot()
             generate_data.create_summary()
+            generate_data.summary_snapshot()
 
             if not generate_data.response:
                 raise ValueError("summary not created")
 
             # Make summary pdf
-            generate_doc = GenerateDoc(md_text=generate_data.response)
-            generate_doc.generate_html()
+            generate_doc = GenerateDoc(html=generate_data.response)
+            generate_doc.generate_pdf()
 
             if not generate_doc.html:
                 raise ValueError("html missing")

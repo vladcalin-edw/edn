@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SavingsAI – An AI‑Driven Personal Finance Assistant</title>
+<style>
+  body {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin:0; padding:2rem; line-height:1.6; color:#333;}
+  header {margin-bottom:2rem;}
+  h1 {font-size:2.5rem; font-weight:700; margin:0;}
+  .date {font-size:0.9rem; color:#777; margin-top:0.5rem;}
+  h2 {font-size:1.8rem; font-weight:600; margin-top:2rem;}
+  ul, ol {margin-left:1.5rem;}
+  table {width:100%; border-collapse:collapse; margin-top:1rem;}
+  th, td {border:1px solid #ddd; padding:0.75rem; text-align:left;}
+  th {background:#f5f5f5;}
+  tr:nth-child(even) {background:#fafafa;}
+  .due-date {font-size:0.85rem; color:#777;}
+  .label {font-weight:700;}
+  footer {margin-top:3rem; font-size:0.9rem; color:#777;}
+</style>
+</head>
+<body>
+<header>
+  <h1>SavingsAI – An AI‑Driven Personal Finance Assistant</h1>
+  <div class="date">December 8, 2025. Duration 45 minutes</div>
+</header>
+<main>
+  <section data-section="participants">
+    <h2>Participants</h2>
+    <ul>
+      <li>Alice – Product Owner</li>
+      <li>Alpaca – AI Engineering Lead</li>
+      <li>Monterei – Finance Domain Lead</li>
+    </ul>
+  </section>
+
+  <section data-section="summary">
+    <h2>Meeting Summary</h2>
+    <p>The 45‑minute kickoff session set the foundation for the SavingsAI project, covering vision, objectives, compliance, architecture, timeline, roles, and action items. The team agreed on an Agile MVP delivery, a robust data pipeline, and key compliance checkpoints.</p>
+  </section>
+
+  <section data-section="purpose">
+    <h2>Meeting Purpose</h2>
+    <p class="label">Meeting Purpose</p>
+    <p>To align the product, AI, and finance teams on project scope, technical architecture, regulatory requirements, deliverables, and next steps.</p>
+  </section>
+
+  <section data-section="takeaways">
+    <h2>Key Takeaways</h2>
+    <ul>
+      <li>Project delivers AI‑powered budgeting, savings triggers, and micro‑investment coaching.</li>
+      <li>Compliance with GDPR, PSD2, and UK FCA is mandatory; DPIA scheduled 15 Dec.</li>
+      <li>Architecture will be cloud‑agnostic but AWS preferred; data residency in EU.</li>
+      <li>Timeline: 6 months MVP, with 2‑week sprints and monthly steering reviews.</li>
+      <li>Roles defined; UX Designer and DevOps Engineer to join Sprint 0.</li>
+    </ul>
+  </section>
+
+  <section data-section="action-items">
+    <h2>Action Items</h2>
+    <table>
+      <thead>
+        <tr><th>Person(s)</th><th>Item</th><th>Due Date</th></tr>
+      </thead>
+      <tbody>
+        <tr data-item="action-item"><td>Monterei</td><td>Draft Data Sharing Agreement with partner bank</td><td class="due-date">08 Jan 2026</td></tr>
+        <tr data-item="action-item"><td>Monterei</td><td>Provide NDA template to Alpaca for bank partnership</td><td class="due-date">08 Jan 2026</td></tr>
+        <tr data-item="action-item"><td>Alpaca</td><td>Create KPI dashboard for product & finance metrics</td><td class="due-date">12 Jan 2026</td></tr>
+        <tr data-item="action-item"><td>Alice</td><td>Schedule DPIA workshop</td><td class="due-date">15 Dec 2025</td></tr>
+        <tr data-item="action-item"><td>Alice</td><td>Identify UX designer candidate</td><td class="due-date">19 Dec 2025</td></tr>
+        <tr data-item="action-item"><td>Alpaca</td><td>Set up CI/CD pipeline for ML services</td><td class="due-date">25 Dec 2025</td></tr>
+        <tr data-item="action-item"><td>Monterei</td><td>Confirm FCA audit date</td><td class="due-date">10 Jan 2026</td></tr>
+        <tr data-item="action-item"><td>Alice</td><td>Publish meeting minutes</td><td class="due-date">09 Dec 2025</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section data-section="topics">
+    <h2>Topics</h2>
+    <ul>
+      <li><strong>Project Vision & Objectives</strong>
+        <ul>
+          <li>Mobile‑first AI app for personalized saving insights.</li>
+          <li>Objectives: 25% session time increase, 10% disposable income saved, compliance adherence.</li>
+        </ul>
+      </li>
+      <li><strong>Stakeholder & Compliance Review</strong>
+        <ul>
+          <li>Key stakeholders: Product, AI, Finance, Legal, UX, Marketing.</li>
+          <li>Compliance checkpoints: GDPR, PSD2, UK FCA; DPIA by 15 Dec.</li>
+        </ul>
+      </li>
+      <li><strong>Technical Architecture</strong>
+        <ul>
+          <li>Data ingestion via PSD2, Data Lake on AWS S3, Spark & Kafka pipeline, TensorFlow‑serving ML service, secure API Gateway, React Native front‑end.</li>
+          <li>Cloud‑agnostic design with EU data residency.</li>
+        </ul>
+      </li>
+      <li><strong>Project Timeline & Milestones</strong>
+        <ul>
+          <li>6‑month schedule: MVP, savings logic, micro‑investment, beta launch.</li>
+          <li>Compliance milestones: DPIA, FCA audit, GDPR data‑subject rights.</li>
+        </ul>
+      </li>
+      <li><strong>Roles & Responsibilities</strong>
+        <ul>
+          <li>Product Lead, AI Lead, Finance Lead, UX Designer (TBD), DevOps Engineer (TBD), Legal Counsel (external).</li>
+        </ul>
+      </li>
+      <li><strong>Action Items & Wrap‑Up</strong>
+        <ul>
+          <li>Action items listed in the table above.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section data-section="next-steps">
+    <h2>Next Steps</h2>
+    <ul>
+      <li><strong>Alice</strong>
+        <ul>
+          <li>Schedule DPIA workshop.</li>
+          <li>Identify UX designer candidate.</li>
+          <li>Publish meeting minutes.</li>
+        </ul>
+      </li>
+      <li><strong>Alpaca</strong>
+        <ul>
+          <li>Create KPI dashboard.</li>
+          <li>Set up CI/CD pipeline for ML services.</li>
+        </ul>
+      </li>
+      <li><strong>Monterei</strong>
+        <ul>
+          <li>Draft Data Sharing Agreement.</li>
+          <li>Provide NDA template to Alpaca.</li>
+          <li>Confirm FCA audit date.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</main>
+<footer>
+  Meeting adjourned at 09:45 A.M.
+</footer>
+</body>
+</html>
