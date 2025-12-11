@@ -2,7 +2,7 @@ import threading
 
 from flask import Flask, request, render_template
 
-from services import SummarizeService
+from services import SummarizeService, MeetingBot
 
 
 app = Flask(__name__)
@@ -11,6 +11,26 @@ app = Flask(__name__)
 @app.route("/", methods=["GET"])
 def index():
     return render_template("index.html")
+
+
+@app.route("/meeting", methods=["POST"])
+def meeting():
+    data = request.get_json()
+    meeting_url = data["meeting_url"]
+    if not meeting_url:
+        return "meeting url missing"
+
+    if not "teams.microsoft.com" in meeting_url:
+        return "only works with microsoft teams at the moment"
+
+    meeting_bot = MeetingBot(meeting_url=meeting_url)
+
+    meeting_bot_thread = threading.Thread(
+        target=meeting_bot.access_meeting, name="access_meeting"
+    )
+
+    meeting_bot_thread.start()
+    return "the meeting bot started"
 
 
 @app.route("/summarize", methods=["POST"])
