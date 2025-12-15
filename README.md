@@ -32,4 +32,4 @@ Once the summary was created, it will be delivered through mail, based on a give
 
 ## Supported platforms for note taking
 
-[x] Microsoft Teams
+- [x] Microsoft Teams
