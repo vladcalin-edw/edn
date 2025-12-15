@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Meeting Summary</title>
+<style>
+  body {font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; margin:0; padding:0;}
+  header {padding:1rem; background:#f5f5f5;}
+  h1 {font-size:2rem; font-weight:bold; margin:0;}
+  .date-duration {font-size:0.875rem; color:#666; margin-top:0.5rem;}
+  section {padding:1rem;}
+  h2 {font-size:1.5rem; font-weight:600; margin-bottom:0.5rem;}
+  h2+p, .label {font-weight:bold; margin-bottom:0.25rem;}
+  .label {font-weight:bold; margin-top:1rem;}
+  ul {margin-left:1.5rem;}
+  table {width:100%; border-collapse:collapse; margin-top:1rem;}
+  th, td {border:1px solid #ccc; padding:0.5rem; text-align:left;}
+  tr:nth-child(even) {background:#fafafa;}
+  .due-date {font-size:0.875rem; color:#666;}
+  .footer {font-size:0.875rem; color:#666; text-align:center; margin-top:2rem;}
+</style>
+</head>
+<body>
+<header>
+  <h1 data-section="title">Meeting Title</h1>
+  <div class="date-duration" data-section="date-duration">28 Jan 2024 • 14:34 - 14:46 (12 min)</div>
+</header>
+<main>
+  <section data-section="participants">
+    <h2>Participants</h2>
+    <ul>
+      <li data-item="participant">Cosmin Ghinea</li>
+      <li data-item="participant">Calin Vlad</li>
+      <li data-item="participant">Eden (mentioned)</li>
+      <li data-item="participant">Anton (host server discussion)</li>
+    </ul>
+  </section>
+
+  <section data-section="meeting-summary">
+    <h2>Meeting Summary</h2>
+    <p>The meeting focused on progressing a bot project that records Microsoft Teams meetings, transcribes audio to text, and automates the creation of meeting minutes. Discussion covered Sprint 1 outcomes, Sprint 2 objectives, testing plans, and hosting considerations.</p>
+  </section>
+
+  <section data-section="meeting-purpose">
+    <p><strong>Meeting Purpose</strong></p>
+    <p>To plan the next steps for integrating an audio recording bot into Microsoft Teams, ensuring automated transcription and seamless upload of minutes into the existing system. The team also aimed to confirm server hosting strategy and discuss protective measures against prompt injection.</p>
+  </section>
+
+  <section data-section="key-takeaways">
+    <p><strong>Key Takeaways</strong></p>
+    <ul>
+      <li>Bot must act like a normal user to join Teams and record audio.</li>
+      <li>Transcription will be stored in a standard file format and processed by the system to generate minutes.</li>
+      <li>Testing of prompt injection protection is planned for next meeting.</li>
+      <li>Hosting solution must be decided; Anton will be consulted for server options.</li>
+      <li>Future meetings require automated file upload to avoid manual steps.</li>
+    </ul>
+  </section>
+
+  <section data-section="action-items">
+    <h2>Action Items</h2>
+    <table>
+      <thead>
+        <tr data-item="action-item">
+          <th>Person(s)</th>
+          <th>Item</th>
+          <th>Due Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-item="action-item">
+          <td>Calin Vlad</td>
+          <td>Save the audio meeting file and send to Cosmin via Discord by Monday</td>
+          <td class="due-date">Due: Mon, 28 Jan 2024</td>
+        </tr>
+        <tr data-item="action-item">
+          <td>Cosmin Ghinea</td>
+          <td>Set up a tool on Discord to receive the audio file and forward to team</td>
+          <td class="due-date">Due: Mon, 28 Jan 2024</td>
+        </tr>
+        <tr data-item="action-item">
+          <td>Anton</td>
+          <td>Provide a mini server or hosting solution for the bot</td>
+          <td class="due-date">Due: TBD</td>
+        </tr>
+        <tr data-item="action-item">
+          <td>Calin Vlad</td>
+          <td>Test bot’s ability to delete first 10 minutes of conversation for protection</td>
+          <td class="due-date">Due: Mon, 28 Jan 2024</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section data-section="topics">
+    <h2>Topics</h2>
+    <article data-item="topic">
+      <p><strong>Bot Development & Testing</strong></p>
+      <ul>
+        <li>Ensure bot joins Teams as a user, records audio, and transcribes.</li>
+        <li>Handle browser settings for bot compatibility.</li>
+      </ul>
+    </article>
+    <article data-item="topic">
+      <p><strong>Sprint Planning</strong></p>
+      <ul>
+        <li>Review Sprint 1 results (transcription pipeline).</li>
+        <li>Define Sprint 2 objectives: automated file upload and integration.</li>
+      </ul>
+    </article>
+    <article data-item="topic">
+      <p><strong>Server Hosting & Infrastructure</strong></p>
+      <ul>
+        <li>Decide on hosting location (Anton’s server or external provider).</li>
+        <li>Discuss potential hosting costs and maintenance.</li>
+      </ul>
+    </article>
+    <article data-item="topic">
+      <p><strong>Security & Protection</strong></p>
+      <ul>
+        <li>Implement prompt injection protection (delete first 10 minutes).</li>
+        <li>Plan for safe deletion of sensitive conversation parts.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section data-section="next-steps">
+    <h2>Next Steps</h2>
+    <article data-item="next-step">
+      <p><strong>Calin Vlad</strong></p>
+      <ul>
+        <li>Save and share the audio meeting file on Discord.</li>
+        <li>Test bot’s protection feature next week.</li>
+      </ul>
+    </article>
+    <article data-item="next-step">
+      <p><strong>Cosmin Ghinea</strong></p>
+      <ul>
+        <li>Set up Discord tool to receive files.</li>
+        <li>Coordinate with Anton for server hosting.</li>
+      </ul>
+    </article>
+    <article data-item="next-step">
+      <p><strong>Anton</strong></p>
+      <ul>
+        <li>Provide a hosting solution or server details.</li>
+      </ul>
+    </article>
+  </section>
+</main>
+<footer class="footer" data-section="footer">
+  &copy; 2024 Meeting Summary
+</footer>
+</body>
+</html>

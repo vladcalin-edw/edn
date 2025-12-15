@@ -1,3 +1,7 @@
 venv
 
 **/__pychache__/
+
+./server/logs/prompts/*
+./server/logs/recordings/*
+./server/logs/summaries/*

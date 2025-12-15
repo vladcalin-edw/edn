@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Automating Teams Meeting Recording and Summary</title>
+<style>
+  body {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin:0; padding:0; background:#f9f9f9; color:#333;}
+  header {background:#fff; padding:20px; border-bottom:1px solid #ddd;}
+  header h1 {font-size:2em; font-weight:bold; margin:0;}
+  header .info {font-size:0.9em; color:#777; margin-top:5px;}
+  main {max-width:900px; margin:0 auto; padding:20px;}
+  section {margin-bottom:30px;}
+  h2 {font-size:1.5em; margin-top:1.5em; margin-bottom:0.5em;}
+  h2 + p {font-size:1em; margin:0;}
+  .label {font-weight:bold;}
+  table {width:100%; border-collapse:collapse; margin-top:10px;}
+  th, td {border:1px solid #ddd; padding:8px; text-align:left;}
+  tbody tr:nth-child(even) {background:#f2f2f2;}
+  .due {font-size:0.85em; color:#777;}
+  ul, ol {margin-left:20px;}
+  footer {text-align:center; font-size:0.8em; color:#777; padding:10px; border-top:1px solid #ddd;}
+</style>
+</head>
+<body>
+<header>
+  <h1>Automating Teams Meeting Recording and Summary</h1>
+  <p class="info" data-section="date-duration">June 28, 2024 | 1:00 PM – 2:30 PM</p>
+</header>
+<main>
+  <section data-section="participants">
+    <h2>Participants</h2>
+    <ul>
+      <li data-participant="User1">User1</li>
+      <li data-participant="User2">User2</li>
+      <li data-participant="User3">User3</li>
+      <li data-participant="User4">User4</li>
+      <li data-participant="User">User (Bot)</li>
+      <li data-participant="Eden">Eden</li>
+      <li data-participant="Anton">Anton</li>
+    </ul>
+  </section>
+  <section data-section="summary">
+    <h2>Meeting Summary</h2>
+    <p>The meeting focused on developing a system that automatically joins Microsoft Teams meetings, records audio (and optionally video), converts the recording to text, and generates a meeting minute. Participants discussed the technical approach using Selenium, the need for handling browser settings, and the plan for automated upload and summary generation. Future steps involve testing the audio recording feature and integrating the text output with earlier sprint outputs.</p>
+  </section>
+  <section data-section="purpose">
+    <h2>Meeting Purpose</h2>
+    <p class="label">Meeting Purpose</p>
+    <p>The purpose of this meeting was to outline the requirements and action plan for Sprint II, which aims to capture and transcribe Microsoft Teams meeting audio, produce a text file, and integrate it into the existing meeting summary workflow established in Sprint I.</p>
+  </section>
+  <section data-section="takeaways">
+    <h2>Key Takeaways</h2>
+    <p class="label"><strong>Key Takeaways:</strong></p>
+    <ul>
+      <li>The bot should act as a user, entering the Teams meeting automatically.</li>
+      <li>Recording will be saved in a text-friendly format before upload.</li>
+      <li>Automated upload to the server from Sprint I is desired to avoid manual steps.</li>
+    </ul>
+  </section>
+  <section data-section="actions">
+    <h2>Action Items</h2>
+    <table data-table="action-items">
+      <thead>
+        <tr>
+          <th>Person(s)</th>
+          <th>Item</th>
+          <th>Due Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-item="action-item">
+          <td>Calin Vlad</td>
+          <td>Test audio recording and generate text file.</td>
+          <td class="due">TBD</td>
+        </tr>
+        <tr data-item="action-item">
+          <td>Cosmin Ghinea</td>
+          <td>Send recorded file to Discord for review.</td>
+          <td class="due">TBD</td>
+        </tr>
+        <tr data-item="action-item">
+          <td>Anton</td>
+          <td>Set up a temporary server for automated uploads.</td>
+          <td class="due">TBD</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section data-section="topics">
+    <h2>Topics Discussed</h2>
+    <article data-topic="bot-integration">
+      <h3><strong>Bot Integration into Teams</strong></h3>
+      <p>Using Selenium to control a browser session, the bot will enter the meeting as a user and start recording. Browser settings such as disabling pop‑ups are critical for success.</p>
+    </article>
+    <article data-topic="audio-recording">
+      <h3><strong>Audio Recording Strategy</strong></h3>
+      <p>The primary goal is to capture high‑quality audio; video may be added later. The audio will then be converted to text.</p>
+    </article>
+    <article data-topic="upload-process">
+      <h3><strong>Automated Upload Process</strong></h3>
+      <p>The generated text file should be uploaded automatically to the server used in Sprint I, eliminating manual steps for users.</p>
+    </article>
+    <article data-topic="server-hosting">
+      <h3><strong>Server Hosting Decisions</strong></h3>
+      <p>Discussion around whether to host on a local office server or use a third‑party hosting service. A quick test will be performed in the next meeting.</p>
+    </article>
+  </section>
+  <section data-section="next-steps">
+    <h2>Next Steps</h2>
+    <ul>
+      <li><strong>Calin Vlad</strong>
+        <ul>
+          <li>Conduct audio recording tests on Monday.</li>
+          <li>Prepare the text output for integration.</li>
+        </ul>
+      </li>
+      <li><strong>Cosmin Ghinea</strong>
+        <ul>
+          <li>Send the recorded file to Discord after the test.</li>
+          <li>Coordinate with Anton for server setup.</li>
+        </ul>
+      </li>
+      <li><strong>Anton</strong>
+        <ul>
+          <li>Set up temporary server for upload integration.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2024 Project Team</p>
+</footer>
+</body>
+</html>

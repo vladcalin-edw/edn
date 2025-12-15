@@ -1,0 +1,654 @@
+
+
+        You are an AI assistant that MUST output a complete, valid HTML document (<!doctype html> ... </html>) containing meeting notes. Output ONLY the HTML, no explanations, no extra text. Follow these rules exactly:
+
+1) Structure & placeholders
+- Use the following exact placeholders for all data. If actual values are provided, replace the placeholders; otherwise leave them visible:
+  - <Meeting Title>
+  - <Date in format: December 5, 2025. Duration (when known)>
+  - <Participants>
+  - <Participant 1>, <Participant 2>, ...
+  - <Meeting Summary>
+  - <Meeting Purpose>
+  - <Key Takeaways>
+  - <Action Items>
+  - <Topics>
+  - <Next Steps>
+
+2) Input Data
+- You will be provided with the transcript data of the meeting as follows:
+- Transcript Data
+    ```
+    WEBVTT
+
+00:00:04.785 --> 00:00:08.355
+<v Calin Vlad>Ok share screen.</v>
+
+00:00:12.605 --> 00:00:15.015
+<v Calin Vlad>Ok nici o sistemici.</v>
+
+00:00:17.555 --> 00:00:17.985
+<v Calin Vlad>Se vede.</v>
+
+00:00:18.435 --> 00:00:18.795
+<v Cosmin Ghinea>Da.</v>
+
+00:00:19.265 --> 00:00:22.845
+<v Calin Vlad>Bun ăsta e mitingul pe care suntem acum.</v>
+
+00:00:23.785 --> 00:00:26.075
+<v Calin Vlad>Trebuie să-mi pornesc serviciu.</v>
+
+00:00:36.095 --> 00:00:36.595
+<v Calin Vlad>Așa?</v>
+
+00:00:37.205 --> 00:00:37.735
+<v Cosmin Ghinea>Ok.</v>
+
+00:00:44.905 --> 00:00:46.605
+<v Cosmin Ghinea>I-am dat o anumit lui edna.</v>
+
+00:00:47.545 --> 00:00:49.175
+<v Calin Vlad>Și acum mai este cu noi.</v>
+
+00:00:50.685 --> 00:00:54.585
+<v Cosmin Ghinea>Salut te din ce faci oprește infinit mirroring la.</v>
+
+00:00:55.465 --> 00:00:55.915
+<v Calin Vlad>Gata.</v>
+
+00:00:56.955 --> 00:01:01.235
+<v Cosmin Ghinea>Ok nu că nu-i ziceam ziceam ce spuneam noi da bun.</v>
+
+00:01:02.765 --> 00:01:04.575
+<v Calin Vlad>Ea nu știe nimic momentan doar intră.</v>
+
+00:01:05.615 --> 00:01:06.605
+<v Cosmin Ghinea>Dar &#238;nregistrează.</v>
+
+00:01:07.195 --> 00:01:07.845
+<v Calin Vlad>Nu &#238;ncă.</v>
+
+00:01:08.595 --> 00:01:09.135
+<v Cosmin Ghinea>Ok.</v>
+
+00:01:09.605 --> 00:01:10.785
+<v Calin Vlad>&#206;ncă n-am.</v>
+
+00:01:11.505 --> 00:01:13.855
+<v Calin Vlad>Făcut aia, partea de intrare a fost.</v>
+
+00:01:15.175 --> 00:01:16.035
+<v Calin Vlad>Complicat da?</v>
+
+00:01:18.265 --> 00:01:25.115
+<v Calin Vlad>Mulțumiri Microsoft, dar am reușit să intru ca să nu mai avem mirroring da și &#238;l vezi că stă cu noi.</v>
+
+00:01:21.585 --> 00:01:22.225
+<v Cosmin Ghinea>Ok.</v>
+
+00:01:26.125 --> 00:01:32.275
+<v Cosmin Ghinea>Ok bine momentan participat mut nu face nimic nu ia notițe, nu zice, nu de genu.</v>
+
+00:01:27.065 --> 00:01:28.555
+<v Calin Vlad>Este cu noi și o să stea &#238;n.</v>
+
+00:01:33.615 --> 00:01:38.865
+<v Calin Vlad>Și c&#226;nd o să ia notițe, noi n-o să știm. Totuși un participant multa să fie de la &#238;nregistrează.</v>
+
+00:01:38.075 --> 00:01:38.445
+<v Cosmin Ghinea>Da.</v>
+
+00:01:39.815 --> 00:01:45.925
+<v Cosmin Ghinea>Ok ă pentru sprintul 7, dar &#238;n sprintul 7 să punem o.</v>
+
+00:01:47.165 --> 00:01:58.015
+<v Cosmin Ghinea>Un background ceva un *** au și ceilalți sau și-au putut să nu o poți s&#227; *** se cheamă asta unde scrie Pressone pentru imaginea lui, știi?</v>
+
+00:01:56.495 --> 00:02:00.635
+<v Calin Vlad>Ăăăă da lași customiza după ce am.</v>
+
+00:01:59.805 --> 00:02:02.435
+<v Cosmin Ghinea>Da dar nu acum acum este irelevant.</v>
+
+00:02:01.505 --> 00:02:01.875
+<v Calin Vlad>Da.</v>
+
+00:02:02.825 --> 00:02:05.445
+<v Calin Vlad>Mai &#238;nt&#226;i vreau să iau datele și după o facem frumos.</v>
+
+00:02:05.325 --> 00:02:16.925
+<v Cosmin Ghinea>Evident, evident, păi nu asta e. Av&#226;nd &#238;n vedere că luni, teoretic, am trecut la 2-a săptăm&#226;nă, să vedem dacă reușim să ne ținem, de ce ne-am propus &#238;n fiecare săptăm&#226;nă, să atingem c&#226;teva luni inclusiv.</v>
+
+00:02:16.355 --> 00:02:18.205
+<v Calin Vlad>Da doamnă.</v>
+
+00:02:17.855 --> 00:02:20.465
+<v Cosmin Ghinea>Ok bun, deci pentru astăzi ce ar fi?</v>
+
+00:02:22.555 --> 00:02:28.625
+<v Calin Vlad>&#206;nsă am eu miting cu aceste Dumnezeu și să mă audă.</v>
+
+00:02:25.645 --> 00:02:26.285
+<v Cosmin Ghinea>Eden.</v>
+
+00:02:27.245 --> 00:02:27.785
+<v Cosmin Ghinea>Ok.</v>
+
+00:02:30.265 --> 00:02:31.885
+<v Cosmin Ghinea>Ok, deci practic trebuie să te.</v>
+
+00:02:31.035 --> 00:02:33.815
+<v Calin Vlad>Să mă auză să stocheze audio.</v>
+
+00:02:34.305 --> 00:02:34.835
+<v Cosmin Ghinea>Da.</v>
+
+00:02:34.845 --> 00:02:39.065
+<v Calin Vlad>Audio sau video &#238;ncă nu sunt sigur, s-ar putea video.</v>
+
+00:02:37.525 --> 00:02:43.735
+<v Cosmin Ghinea>Poți să pleci &#238;nt&#226;i cu audio, adică vezi c&#226;t de fapt nu pleacă cu ce cel mai rapid.</v>
+
+00:02:40.595 --> 00:02:41.015
+<v Calin Vlad>Ok.</v>
+
+00:02:44.685 --> 00:02:45.395
+<v Calin Vlad>Audi a.</v>
+
+00:02:44.955 --> 00:02:56.175
+<v Cosmin Ghinea>Noi noi mod normal trebuie să avem textul, deci nu prea contează că dacă video captează și sunetul e perfect, dacă video, dacă pentru video trebuie să faci 2 pași.</v>
+
+00:02:57.025 --> 00:03:09.125
+<v Cosmin Ghinea>Că habar n-am și atunci pleacă doar cu audio. Dacă constați că nu știu codecuri, nu-mi dau seama ce probleme pot fi p audio, dar poți să iei din video sunetul, ok?</v>
+
+00:02:58.015 --> 00:02:59.235
+<v Calin Vlad>&#206;.</v>
+
+00:03:06.805 --> 00:03:07.615
+<v Calin Vlad>N-ar trebui.</v>
+
+00:03:10.285 --> 00:03:14.855
+<v Calin Vlad>Da pot să fac record in doar de audio fără video, ceea ce ar fi și mai ieftin.</v>
+
+00:03:15.555 --> 00:03:28.135
+<v Cosmin Ghinea>Da da putem la &#238;nceput așa, adică pentru obiectivul KGB ului nostru 9 ne trebuie de fapt ă minuta sau mă rog, sumarul ședinței sau spune-i *** vrei ă ceea ce?</v>
+
+00:03:29.115 --> 00:03:58.495
+<v Cosmin Ghinea>Pentru obiectivul nostru de inv. Nu nu avem nevoie de video cancer la alte licori să ne ducem să vedem &#238;n minutul 3 dacă m-am scărpinat &#238;n cap, adică să văd și imagine și poate asta c&#226;nd o să fie prezentări atașate că acolo are sens să captez și prezentarea, dar neata neata ori scop tu de bine și pare că doar pe audio reușești astăzi, adică luni, c&#226;nd intrăm cu el &#238;n n și faceți sumarul minut. Discuție de luni, ești optimist sau NU ești optimist.</v>
+
+00:03:38.455 --> 00:03:38.895
+<v Calin Vlad>Da.</v>
+
+00:03:59.535 --> 00:04:03.835
+<v Calin Vlad>Luni să facă și sumarul, nu nu cred.</v>
+
+00:04:04.485 --> 00:04:06.035
+<v Calin Vlad>Pentru că trebuie să audio.</v>
+
+00:04:04.555 --> 00:04:06.875
+<v Cosmin Ghinea>Sumarul nu că să &#238;nregistreze.</v>
+
+00:04:07.515 --> 00:04:10.345
+<v Calin Vlad>Să &#238;nregistreze da asta ar fi.</v>
+
+00:04:09.365 --> 00:04:16.695
+<v Cosmin Ghinea>Dacă luni, c&#226;nd intrăm &#238;n ședință n și &#238;nregistrează, va fi simplu să ne dea fișierul &#238;nregistrat brut că după Aia Băgăm.</v>
+
+00:04:14.735 --> 00:04:17.535
+<v Calin Vlad>Exact da asta vreau.</v>
+
+00:04:18.285 --> 00:04:20.285
+<v Cosmin Ghinea>Ok AH ce tare ar fi.</v>
+
+00:04:19.595 --> 00:04:31.985
+<v Calin Vlad>Tot așa am intrat &#238;n miting, au &#238;nregistrat mitingul, noi am terminat mitingul și la un moment dat &#238;l trimite sau trebuie sa am acces la fișier pe care pot să-l fac text și după să mori mai &#238;nt&#226;i fișierul.</v>
+
+00:04:31.185 --> 00:04:31.645
+<v Cosmin Ghinea>&#206;h&#238;.</v>
+
+00:04:32.985 --> 00:04:35.875
+<v Cosmin Ghinea>Și fișierul așa *** vezi acum ce formațiile da?</v>
+
+00:04:36.855 --> 00:04:37.965
+<v Cosmin Ghinea>Sau tu decizi.</v>
+
+00:04:37.485 --> 00:04:46.165
+<v Calin Vlad>Nu prea mă interesează &#238;n ce formație, c&#226;t timp e audio, ceea ce va trebui să mapezi și &#238;ncă nu știu este vocile.</v>
+
+00:04:47.205 --> 00:04:51.235
+<v Cosmin Ghinea>Dar să știi &#238;n fiecare minut. Acum a vorbit cosmin acum călin acum X.</v>
+
+00:04:50.775 --> 00:04:53.375
+<v Calin Vlad>Da exact asta va fi.</v>
+
+00:04:54.195 --> 00:05:00.385
+<v Calin Vlad>Asta &#238;ncheie cu necunoscut, *** voi mapa, vocile, dar &#238;n primă fază vreau să iau doar text.</v>
+
+00:05:01.705 --> 00:05:02.915
+<v Calin Vlad>Și să mă ocup și de voce.</v>
+
+00:05:03.555 --> 00:05:13.645
+<v Cosmin Ghinea>Ok mai normal așa văd și dacă folosești selenium ar trebui să detecteze fiecare fereastră și să iei măcar după time stamp.</v>
+
+00:05:11.885 --> 00:05:16.735
+<v Calin Vlad>Da asta am zis &#238;n mitingul trecut să-mi fac, &#238;n timp ce dăm cu fiecare.</v>
+
+00:05:14.305 --> 00:05:16.235
+<v Cosmin Ghinea>Da și să iei măcar după Times team.</v>
+
+00:05:17.455 --> 00:05:21.845
+<v Calin Vlad>Cine a vorbit a vorbit la 8 minutul secunda Aia, OK?</v>
+
+00:05:17.595 --> 00:05:17.885
+<v Cosmin Ghinea>Da.</v>
+
+00:05:21.495 --> 00:05:21.805
+<v Cosmin Ghinea>Da.</v>
+
+00:05:22.755 --> 00:05:23.915
+<v Calin Vlad>Meci cu datele.</v>
+
+00:05:25.165 --> 00:05:29.815
+<v Cosmin Ghinea>Dacă și dacă, dacă și datele c&#226;nd te &#238;nregistrezi au tot așa posac.</v>
+
+00:05:31.365 --> 00:05:43.395
+<v Cosmin Ghinea>Voiam să zic o sacadare, o scadență, un interval de timp și la fiecare frază *** avem ă am deschis by 2 pentru că suntem &#238;n timp și am deschis transcriptul nu și dacă &#238;l vezi &#238;n chat *** ar veni.</v>
+
+00:05:42.995 --> 00:05:43.525
+<v Calin Vlad>&#206;.</v>
+
+00:05:44.235 --> 00:05:44.835
+<v Cosmin Ghinea>&#206;l vezi?</v>
+
+00:05:44.525 --> 00:05:46.185
+<v Calin Vlad>Transcrie &#238;l văd.</v>
+
+00:05:46.535 --> 00:05:47.475
+<v Cosmin Ghinea>Ok deci tras.</v>
+
+00:05:46.995 --> 00:05:48.385
+<v Calin Vlad>Dar nu văd ce face?</v>
+
+00:05:49.525 --> 00:05:56.225
+<v Cosmin Ghinea>Ah, o să-ți dau mai t&#226;rziu. Cert este că fiecare să &#238;ți dau un print screen, fiecare propoziție pe care o spuneam.</v>
+
+00:05:54.105 --> 00:05:54.475
+<v Calin Vlad>Te rog.</v>
+
+00:05:58.355 --> 00:06:02.655
+<v Cosmin Ghinea>Are un timestamp am pus pe discord ă poza.</v>
+
+00:05:58.405 --> 00:05:58.935
+<v Calin Vlad>Ok.</v>
+
+00:06:08.335 --> 00:06:19.295
+<v Cosmin Ghinea>Deci tu oficial al lui Tul oficial al lui Timis că i-am dat transcript și după aia o să salvez discuția asta și teama bine. O să fie un fișier pe care &#238;l putem pune să testăm.</v>
+
+00:06:08.655 --> 00:06:08.985
+<v Calin Vlad>Ah.</v>
+
+00:06:09.055 --> 00:06:09.815
+<v Calin Vlad>Da.</v>
+
+00:06:21.405 --> 00:06:22.895
+<v Calin Vlad>Da foarte frumos este.</v>
+
+00:06:22.075 --> 00:06:35.675
+<v Cosmin Ghinea>Asta putem să știi și dacă vezi fiecare ă. Deci el identifică cu inițialele noastre și ce fereastră și ce a zis cu o oarecare acuratețe, dar sigur și minutul.</v>
+
+00:06:39.785 --> 00:06:42.695
+<v Calin Vlad>Dar nu e at&#226;t de ciudat pe c&#226;t mă așteptam.</v>
+
+00:06:41.605 --> 00:06:45.085
+<v Cosmin Ghinea>Nu e nu e nu e pe engleza e mai corect dec&#226;t pe rom&#226;na.</v>
+
+00:06:45.185 --> 00:06:46.315
+<v Calin Vlad>Ah suntem OK.</v>
+
+00:06:46.835 --> 00:07:11.465
+<v Cosmin Ghinea>&#206;n mitingurile pe engleză e mult mai bine, dar asta nu contează. Important e să simți, adică &#238;ntr-o primă fază importantă, să aibă 1, 90, %90 și ceva la sută acuratețe știm ă și dup aia mai vedem da bai 2 dacă totuși să facem testul ăsta că o să-mi salvez un fișier, sper că pot să-l salvez ușor noapte stat &#238;ncă din timp, după care o să ți-l dau ție să-l pui &#238;n.</v>
+
+00:06:53.575 --> 00:06:54.195
+<v Calin Vlad>Da.</v>
+
+00:07:12.535 --> 00:07:27.765
+<v Cosmin Ghinea>Rezultatul inchipui o să și trimită după Aia Petre noi 2 minute. Hai să facem un sumar că tot avem un ai care le gestionează un sumar al săptăm&#226;nii și &#238;ncepe tu așa. O chema trebuie să fie farmacie luni, ce am făcut marți ce am făcut?</v>
+
+00:07:13.225 --> 00:07:13.665
+<v Calin Vlad>&#206;.</v>
+
+00:07:18.645 --> 00:07:18.865
+<v Calin Vlad>Da.</v>
+
+00:07:28.935 --> 00:07:30.445
+<v Calin Vlad>Avem și notez ce fac?</v>
+
+00:07:31.415 --> 00:07:32.215
+<v Cosmin Ghinea>Cu at&#226;t mai bine.</v>
+
+00:07:31.955 --> 00:07:32.635
+<v Calin Vlad>Uite.</v>
+
+00:07:35.785 --> 00:07:38.835
+<v Calin Vlad>Așa, luni pe 8 P 8.</v>
+
+00:07:39.765 --> 00:07:47.595
+<v Calin Vlad>Ăăăă am făcut partea de yui care să trimită notificarea pe MAIL, am unit și UE cu mailuri lungi.</v>
+
+00:07:47.355 --> 00:07:51.355
+<v Cosmin Ghinea>Perfect și practic așa am &#238;ncheiat ă sprintul unu.</v>
+
+00:07:52.335 --> 00:07:52.945
+<v Calin Vlad>Da.</v>
+
+00:07:53.355 --> 00:08:01.485
+<v Cosmin Ghinea>Ok, deci luni a fost ziua &#238;n care am terminat prima săptăm&#226;nă de sprint, &#238;n care la final eu vorbesc așa pentru aia &#238;n care la final.</v>
+
+00:07:59.455 --> 00:08:00.325
+<v Calin Vlad>Da știu.</v>
+
+00:08:02.175 --> 00:08:04.595
+<v Cosmin Ghinea>Avem am trecut prin.</v>
+
+00:08:05.375 --> 00:08:16.995
+<v Cosmin Ghinea>Generalist vorbind următoarele etape, a avem un fișier brut al conversației. Acest fișier a fost &#238;ncărcat &#238;n softul nostru de nota cher.</v>
+
+00:08:18.045 --> 00:08:20.135
+<v Cosmin Ghinea>Softul nostru ă.</v>
+
+00:08:21.255 --> 00:08:52.095
+<v Cosmin Ghinea>Citește, &#238;l ne dă un rezumat. Conform unor cerințe predefinite de către noi de tip rezumat ședință cu mai multe capitole, obiectivul ședinței excel plan, fiecare ce are de făcut, cine ce a zis at&#226;t acel sumar &#238;ntr-o primă fază, sumar al ședinței sau minuta ședinței se trimite &#238;ntr-un format pdf, gif către adresa de email predefinite. &#206;n mod normal se vor trimite către adresa de email.</v>
+
+00:08:52.655 --> 00:08:55.525
+<v Cosmin Ghinea>A celui care inițiază discuția.</v>
+
+00:08:56.195 --> 00:09:01.205
+<v Cosmin Ghinea>Și tot &#238;n cadrul primului sprint am stabilit că avem un.</v>
+
+00:09:01.995 --> 00:09:03.065
+<v Cosmin Ghinea>O interfață.</v>
+
+00:09:03.735 --> 00:09:11.165
+<v Cosmin Ghinea>C&#226;t de simplă se poate pentru faza asta de inppi și am folosit un model mai mult sau mai puțin similar cu ce a reui transfer.</v>
+
+00:09:13.205 --> 00:09:13.565
+<v Calin Vlad>Ok.</v>
+
+00:09:14.125 --> 00:09:34.005
+<v Cosmin Ghinea>Perfect bun sper că ne&#238;nregistrat ai ăsta a fost printul. Sprintul II este cel &#238;n care ne propunem să &#238;nregistrăm audio, poate și video, dar &#238;n primul r&#226;nd audio și să facem spiritul text și să obținem un fișier, astfel &#238;nc&#226;t &#238;n final acest fișier se &#238;ncarce &#238;n turul obținut &#238;n sprint unu și mai departe zi de marți &#238;ncoace.</v>
+
+00:09:35.285 --> 00:09:41.935
+<v Calin Vlad>Marți a fost pentru sprintul II partea de listări aici, pentru că nu știam care va fi abordarea.</v>
+
+00:09:42.865 --> 00:09:44.445
+<v Calin Vlad>&#206;n urma exercițiului am.</v>
+
+00:09:45.295 --> 00:09:50.515
+<v Calin Vlad>Ajuns la varianta pe care am prezentat-o astăzi cu seleniu care &#238;ți intră &#238;n mitingul.</v>
+
+00:09:53.425 --> 00:09:56.495
+<v Calin Vlad>Nicio *** se numesc bot &#238;n bot.</v>
+
+00:09:55.785 --> 00:09:59.105
+<v Cosmin Ghinea>Un bot care ca un user sau, mă rog.</v>
+
+00:09:58.845 --> 00:10:03.545
+<v Calin Vlad>Da un vot care ca un user, deci marți a fost partea de risc să-și putem asta.</v>
+
+00:10:04.265 --> 00:10:08.085
+<v Calin Vlad>Și am stabilit c&#226;t de c&#226;t o direcție, o să &#238;ncercăm cu ssl.</v>
+
+00:10:09.115 --> 00:10:09.965
+<v Calin Vlad>Miercuri.</v>
+
+00:10:11.235 --> 00:10:12.185
+<v Calin Vlad>Miercuri 5.</v>
+
+00:10:14.815 --> 00:10:18.925
+<v Calin Vlad>Am fost &#238;ncercarea unu de a face asta care a eșuat.</v>
+
+00:10:20.665 --> 00:10:21.165
+<v Cosmin Ghinea>Ok.</v>
+
+00:10:20.755 --> 00:10:28.755
+<v Calin Vlad>&#206;n care să fac totul, să intre &#238;n miting &#238;n prima fază, nume ieșit din motive de Microsoft teams și de browser.</v>
+
+00:10:29.415 --> 00:10:29.975
+<v Cosmin Ghinea>Ok.</v>
+
+00:10:29.675 --> 00:10:33.375
+<v Calin Vlad>Trăiește chestii &#238;n browser care merge dezactivată.</v>
+
+00:10:34.495 --> 00:10:37.665
+<v Calin Vlad>Joi Din fericire, le-am dezactivat și am reușit să intru &#238;n el.</v>
+
+00:10:38.615 --> 00:10:39.395
+<v Cosmin Ghinea>&#206;ntrebare.</v>
+
+00:10:40.525 --> 00:10:48.115
+<v Cosmin Ghinea>Orice browser ai făcut o setare care este valabil pentru orice browser sau &#238;n pentru inv pe userii trebuie să intre pe chrome sau barna.</v>
+
+00:10:48.695 --> 00:10:50.785
+<v Calin Vlad>Nu nu contează pe ce browser intri.</v>
+
+00:10:51.245 --> 00:10:51.725
+<v Cosmin Ghinea>Ok.</v>
+
+00:10:52.215 --> 00:10:55.545
+<v Calin Vlad>E tipul de browser pe care merge botul.</v>
+
+00:10:57.355 --> 00:10:59.355
+<v Cosmin Ghinea>Pentru că, de fapt botuș deschide.</v>
+
+00:10:59.945 --> 00:11:00.355
+<v Calin Vlad>Da.</v>
+
+00:11:00.215 --> 00:11:03.005
+<v Cosmin Ghinea>Browser ul *** ar veni ok buni.</v>
+
+00:11:01.865 --> 00:11:09.005
+<v Calin Vlad>Da acest browser la final va trebui să fie se numește handles, nu mai pornește nicăieri, e doar un cod.</v>
+
+00:11:10.945 --> 00:11:21.305
+<v Cosmin Ghinea>Ok perfect bun și ca să terminăm sprint ul nostru care &#238;n mod normal se termină luni seara. Astăzi &#238;ți propui să faci zi pentru EDEN ul nostru.</v>
+
+00:11:20.675 --> 00:11:24.725
+<v Calin Vlad>Dacă ar fi să dau definiții și 5 de ani pe acest.</v>
+
+00:11:25.655 --> 00:11:26.075
+<v Cosmin Ghinea>Da.</v>
+
+00:11:26.155 --> 00:11:28.655
+<v Calin Vlad>Prin 2 ar fi să accesăm datele.</v>
+
+00:11:29.915 --> 00:11:32.625
+<v Cosmin Ghinea>Ok, deci practic la finalul.</v>
+
+00:11:30.725 --> 00:11:33.275
+<v Calin Vlad>At&#226;t avem audio meeting.</v>
+
+00:11:34.035 --> 00:11:54.175
+<v Cosmin Ghinea>La finalul sprintului să avem mitingul de audio &#238;ntr-un format &#238;ntr-un fișier de orice fel ideal text. Probabil sau nu contează că par să și-l facem text și acest text să-l unim cu tull pe care le-am făcut &#238;n sprint unu, adică să-l dacă &#238;l avem să găsim o cale să se &#238;ncarce automat să nu mai facă user ul.</v>
+
+00:11:40.355 --> 00:11:40.795
+<v Calin Vlad>Da.</v>
+
+00:11:49.965 --> 00:11:50.215
+<v Calin Vlad>Da.</v>
+
+00:11:54.955 --> 00:11:56.045
+<v Cosmin Ghinea>Un clic &#238;n plus.</v>
+
+00:11:56.885 --> 00:11:57.305
+<v Calin Vlad>Da.</v>
+
+00:11:57.885 --> 00:12:14.315
+<v Cosmin Ghinea>Și &#238;n felul ăsta avem un produs de tip Emv complet &#238;n care avem un miting. Botul intră &#238;n miting &#238;nregistrează, nu contează *** salvează datele sau &#238;nregistrate face spiritul text, textul salvează &#238;ntr-un fișier de orice formă acest.</v>
+
+00:12:15.985 --> 00:12:23.745
+<v Cosmin Ghinea>Texte rezultatul este pus &#238;n turul de la unu. Este analizat de către micul nostru Lama.</v>
+
+00:12:24.655 --> 00:12:32.725
+<v Cosmin Ghinea>Și obține minuta ședinței și iată 2 săptăm&#226;ni &#238;ncheiate cu succes și după Aia o să discutăm, de exemplu.</v>
+
+00:12:33.745 --> 00:12:56.305
+<v Cosmin Ghinea>Săptăm&#226;na viitoare, c&#226;teva zile mai &#238;nainte, să pleci, să BEI, bere pragheză, să vedem *** putem să-l facem să arate și un pic mai sensibil ca să facem un demo că vreau să-l punem și pe anton să &#238;ți seteze un mini server undeva. Dacă mai ții minte am discutat asta și să și &#238;ncepem să-l folosim, sper&#226;nd că totul e OK și nu constatăm că e ceva pe traseu.</v>
+
+00:12:33.975 --> 00:12:34.395
+<v Calin Vlad>Da.</v>
+
+00:12:43.855 --> 00:12:44.495
+<v Calin Vlad>&#206;.</v>
+
+00:12:57.335 --> 00:12:57.965
+<v Calin Vlad>Da.</v>
+
+00:12:58.385 --> 00:13:04.775
+<v Cosmin Ghinea>Adică obiectiv este să avem un produs chiar și &#238;ntr-o fază evident de tip da, care să funcționeze și să &#238;și facă treaba și.</v>
+
+00:13:06.575 --> 00:13:08.345
+<v Calin Vlad>&#194; OK.</v>
+
+00:13:07.845 --> 00:13:15.625
+<v Cosmin Ghinea>Super bine, păi cam at&#226;ta sper că s-a &#238;nregistrat, sper că poți să salvezi fișierul și ți-l trimit imediat *** am să-l dau pe.</v>
+
+00:13:17.155 --> 00:13:24.405
+<v Cosmin Ghinea>Pe discord pune tu un tool să ne și trimită astăzi ca să ne putem uita și.</v>
+
+00:13:24.725 --> 00:13:31.215
+<v Calin Vlad>Da &#238;ntrebarea dv nu are un server propriu la Birou de Fan.</v>
+
+00:13:26.645 --> 00:13:27.045
+<v Cosmin Ghinea>Te rog.</v>
+
+00:13:32.415 --> 00:13:33.665
+<v Calin Vlad>Și experimentari, nu?</v>
+
+00:13:32.825 --> 00:13:36.605
+<v Cosmin Ghinea>Nu știu să-ți răspund, dar o să vorbesc cu anton sigur, găsim o soluție.</v>
+
+00:13:35.155 --> 00:13:35.875
+<v Calin Vlad>Nu cred.</v>
+
+00:13:36.875 --> 00:13:37.315
+<v Calin Vlad>Ok.</v>
+
+00:13:37.715 --> 00:13:47.225
+<v Cosmin Ghinea>Deci nu privim, din punctul meu de vedere, va decide el că e la noi, că e serverul sub un birou, că luăm pe hazna vreo resursă &#238;ți arhim.</v>
+
+00:13:43.125 --> 00:13:43.975
+<v Calin Vlad>&#206;.</v>
+
+00:13:47.995 --> 00:13:48.365
+<v Calin Vlad>Ok.</v>
+
+00:13:48.645 --> 00:13:53.455
+<v Cosmin Ghinea>Noi avem o abordare clasică de tip produs, avem produsul hosteaza undeva astfel &#238;nc&#226;t.</v>
+
+00:13:55.215 --> 00:14:02.935
+<v Cosmin Ghinea>Să-i dăm drumul, știi o să pun și o sticlă de vin pentru colegi să &#238;ncerce să spargă produsul, adică facem lucrurile ca la carte știi?</v>
+
+00:13:55.775 --> 00:13:56.145
+<v Calin Vlad>Da.</v>
+
+00:14:02.805 --> 00:14:04.595
+<v Calin Vlad>E foarte ușor de spart.</v>
+
+00:14:05.335 --> 00:14:09.935
+<v Cosmin Ghinea>Da, păi atunci nu o pun sticla de vin. Imediat mai stăm un pic.</v>
+
+00:14:05.875 --> 00:14:07.925
+<v Calin Vlad>Și restul sunt foarte.</v>
+
+00:14:08.815 --> 00:14:17.915
+<v Calin Vlad>Aș fi vrut să fac asta &#238;n mitingurile trecute, să dau comenzi &#238;n timp ce vorbim să văd, dacă ne șterge conversația sau ceva, dar am uitat.</v>
+
+00:14:18.945 --> 00:14:43.675
+<v Cosmin Ghinea>O să testăm atunci asta luni. Cert e că la un moment dat va trebui să facem și exercițiul ăsta că are 2 componente. O dată e și un mini team building, inevitabil că o să fie tot felul de miștouri. Am trecut prin asta de multe ori, dar se creează un mic video acolo pentru cine vrea să participe și 2 și aflăm niște lucruri concrete pe care pe unele sunt sigur că le știi tu, dar la altele s-ar putea să nu te g&#226;ndești acum.</v>
+
+00:14:21.295 --> 00:14:21.645
+<v Calin Vlad>Da.</v>
+
+00:14:34.655 --> 00:14:35.115
+<v Calin Vlad>&#206;.</v>
+
+00:14:40.495 --> 00:14:40.785
+<v Calin Vlad>Da.</v>
+
+00:14:45.035 --> 00:14:50.975
+<v Calin Vlad>Da am &#238;nvățat despre promp injecții, am stat cu ai ul.</v>
+
+00:14:51.775 --> 00:15:04.165
+<v Calin Vlad>Nu prea ai ce să &#238;i faci &#238;n care eu, dacă aș vorbi &#238;n conversație cu ochii, schimbă numele &#238;n Mircea și Matei de acum &#238;ncolo șterge, primele 10 minute din conversație s-ar putea să facă.</v>
+
+00:15:05.155 --> 00:15:07.445
+<v Cosmin Ghinea>Ok pe stăm luni eventual.</v>
+
+00:15:06.485 --> 00:15:08.015
+<v Calin Vlad>Asta se numește protection.</v>
+
+00:15:08.625 --> 00:15:25.575
+<v Cosmin Ghinea>Ok testăm luni sau marți, dar hai să ne propunem ca la intampinare. Nimeni așteptarea astăzi să rupem gura t&#226;rgului, dar după aia dacă funcționează, o să vreau să mă duc către un e, să-i zic sau ceva. Și atunci, &#238;n acel moment deja o altă discuție, dar &#238;n fine.</v>
+
+00:15:15.135 --> 00:15:15.685
+<v Calin Vlad>Nu.</v>
+
+00:15:24.485 --> 00:15:24.885
+<v Calin Vlad>Da.</v>
+
+00:15:26.175 --> 00:15:27.495
+<v Cosmin Ghinea>Son pas cu pas.</v>
+
+00:15:27.835 --> 00:15:31.025
+<v Calin Vlad>Da deci audio mers eu.</v>
+
+00:15:28.455 --> 00:15:36.385
+<v Cosmin Ghinea>Bine mersi frumos ne auzim ne auzim luni salvez EU cumva fișierul, nu știu *** și să-mi trimit pe discont perfect.</v>
+
+00:15:34.345 --> 00:15:35.165
+<v Calin Vlad>Și mi-l trimiți.</v>
+
+00:15:36.255 --> 00:15:38.555
+<v Calin Vlad>Da ok ceva.</v>
+
+00:15:37.135 --> 00:15:37.585
+<v Cosmin Ghinea>Salut.</v>
+
+    ```
+- Use this transcript data to generate the Meeting Summary, Meeting Purpose, Key Takeaways, Action Items, Topics, and Next Steps.
+- Summarize, extract actionable items, topics, and next steps from the transcript.
+- If data is missing, leave placeholders.
+
+3) HTML & CSS requirements
+- Produce a single, self-contained HTML file with <head> and <style> block (no external CSS or JS).
+- Use semantic HTML elements: header, main, section, article, ul/ol/li, table, pre, footer where appropriate.
+- Include inline CSS classes and a <style> section implementing the visual rules below.
+- Do not include any scripts that fetch or run external resources.
+
+4) Visual & typography rules
+- Title: bold, easy-to-read, visually equivalent to H1, large font-size.
+- Date & Duration: small font-size, grey color, informational style.
+- Participants section heading: H2, medium font.
+- Participant entries: normal body text.
+- Meeting Summary heading: H2, medium font.
+- Meeting Purpose: label "Meeting Purpose" bold; follow-up text normal font, 1–2 paragraphs.
+- Key Takeaways: label bold; each takeaway as bullet (ul > li), normal text.
+- Action Items heading: H2; display all action items in a table with three columns: "Person(s)", "Item", "Due Date". Style the table with borders, optional striped rows, and due date in small grey font similar to Date & Duration.
+- Topics heading: H2; each topic title bold; descriptions normal text; sub-bullets allowed.
+- Next Steps heading: H2; each person bold; their next step(s) as bullets in normal text.
+
+5) Accessibility & formatting
+- Use readable font-family (system stack), adequate line-height, and good contrast (grey elements readable).
+- Use proper heading structure, lists, and table markup for accessibility.
+- Include data- attributes on key elements for parsing, e.g., data-section="participants", data-item="action-item".
+
+6) Layout
+- Header block with Meeting Title and Date/Duration.
+- Main sections in this order: Participants, Meeting Summary, Meeting Purpose, Key Takeaways, Action Items (as table), Topics, Next Steps.
+- Footer optional.
+
+7) Output rule
+- Output only the HTML document, nothing else. Do not write explanations, notes, or text outside the HTML.
+
+        

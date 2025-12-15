@@ -1,0 +1,652 @@
+
+
+        You are an AI assistant that MUST output a complete, valid HTML document (<!doctype html> ... </html>) containing meeting notes. Output ONLY the HTML, no explanations, no extra text. Follow these rules exactly:
+
+1) Structure & placeholders
+- Use the following exact placeholders for all data. If actual values are provided, replace the placeholders; otherwise leave them visible:
+  - <Meeting Title>
+  - <Date in format: December 5, 2025. Duration (when known)>
+  - <Participants>
+  - <Participant 1>, <Participant 2>, ...
+  - <Meeting Summary>
+  - <Meeting Purpose>
+  - <Key Takeaways>
+  - <Action Items>
+  - <Topics>
+  - <Next Steps>
+
+2) Input Data
+- You will be provided with the transcript data of the meeting as follows:
+- Transcript Data
+    ```
+    00:00:04.785 --> 00:00:08.355
+Calin Vlad
+Ok share screen.
+00:00:12.605 --> 00:00:15.015
+Calin Vlad
+Ok nici o sistemici.
+00:00:17.555 --> 00:00:17.985
+Calin Vlad
+Se vede.
+00:00:18.435 --> 00:00:18.795
+Cosmin Ghinea
+Da.
+00:00:19.265 --> 00:00:22.845
+Calin Vlad
+Bun ăsta e mitingul pe care suntem acum.
+00:00:23.785 --> 00:00:26.075
+Calin Vlad
+Trebuie să-mi pornesc serviciu.
+00:00:36.095 --> 00:00:36.595
+Calin Vlad
+Așa?
+00:00:37.205 --> 00:00:37.735
+Cosmin Ghinea
+Ok.
+00:00:44.905 --> 00:00:46.605
+Cosmin Ghinea
+I-am dat o anumit lui edna.
+00:00:47.545 --> 00:00:49.175
+Calin Vlad
+Și acum mai este cu noi.
+00:00:50.685 --> 00:00:54.585
+Cosmin Ghinea
+Salut te din ce faci oprește infinit mirroring la.
+00:00:55.465 --> 00:00:55.915
+Calin Vlad
+Gata.
+00:00:56.955 --> 00:01:01.235
+Cosmin Ghinea
+Ok nu că nu-i ziceam ziceam ce spuneam noi da bun.
+00:01:02.765 --> 00:01:04.575
+Calin Vlad
+Ea nu știe nimic momentan doar intră.
+00:01:05.615 --> 00:01:06.605
+Cosmin Ghinea
+Dar înregistrează.
+00:01:07.195 --> 00:01:07.845
+Calin Vlad
+Nu încă.
+00:01:08.595 --> 00:01:09.135
+Cosmin Ghinea
+Ok.
+00:01:09.605 --> 00:01:10.785
+Calin Vlad
+Încă n-am.
+00:01:11.505 --> 00:01:13.855
+Calin Vlad
+Făcut aia, partea de intrare a fost.
+00:01:15.175 --> 00:01:16.035
+Calin Vlad
+Complicat da?
+00:01:18.265 --> 00:01:25.115
+Calin Vlad
+Mulțumiri Microsoft, dar am reușit să intru ca să nu mai avem mirroring da și îl vezi că stă cu noi.
+00:01:21.585 --> 00:01:22.225
+Cosmin Ghinea
+Ok.
+00:01:26.125 --> 00:01:32.275
+Cosmin Ghinea
+Ok bine momentan participat mut nu face nimic nu ia notițe, nu zice, nu de genu.
+00:01:27.065 --> 00:01:28.555
+Calin Vlad
+Este cu noi și o să stea în.
+00:01:33.615 --> 00:01:38.865
+Calin Vlad
+Și când o să ia notițe, noi n-o să știm. Totuși un participant multa să fie de la înregistrează.
+00:01:38.075 --> 00:01:38.445
+Cosmin Ghinea
+Da.
+00:01:39.815 --> 00:01:45.925
+Cosmin Ghinea
+Ok ă pentru sprintul 7, dar în sprintul 7 să punem o.
+00:01:47.165 --> 00:01:58.015
+Cosmin Ghinea
+Un background ceva un *** au și ceilalți sau și-au putut să nu o poți sã *** se cheamă asta unde scrie Pressone pentru imaginea lui, știi?
+00:01:56.495 --> 00:02:00.635
+Calin Vlad
+Ăăăă da lași customiza după ce am.
+00:01:59.805 --> 00:02:02.435
+Cosmin Ghinea
+Da dar nu acum acum este irelevant.
+00:02:01.505 --> 00:02:01.875
+Calin Vlad
+Da.
+00:02:02.825 --> 00:02:05.445
+Calin Vlad
+Mai întâi vreau să iau datele și după o facem frumos.
+00:02:05.325 --> 00:02:16.925
+Cosmin Ghinea
+Evident, evident, păi nu asta e. Având în vedere că luni, teoretic, am trecut la 2-a săptămână, să vedem dacă reușim să ne ținem, de ce ne-am propus în fiecare săptămână, să atingem câteva luni inclusiv.
+00:02:16.355 --> 00:02:18.205
+Calin Vlad
+Da doamnă.
+00:02:17.855 --> 00:02:20.465
+Cosmin Ghinea
+Ok bun, deci pentru astăzi ce ar fi?
+00:02:22.555 --> 00:02:28.625
+Calin Vlad
+Însă am eu miting cu aceste Dumnezeu și să mă audă.
+00:02:25.645 --> 00:02:26.285
+Cosmin Ghinea
+Eden.
+00:02:27.245 --> 00:02:27.785
+Cosmin Ghinea
+Ok.
+00:02:30.265 --> 00:02:31.885
+Cosmin Ghinea
+Ok, deci practic trebuie să te.
+00:02:31.035 --> 00:02:33.815
+Calin Vlad
+Să mă auză să stocheze audio.
+00:02:34.305 --> 00:02:34.835
+Cosmin Ghinea
+Da.
+00:02:34.845 --> 00:02:39.065
+Calin Vlad
+Audio sau video încă nu sunt sigur, s-ar putea video.
+00:02:37.525 --> 00:02:43.735
+Cosmin Ghinea
+Poți să pleci întâi cu audio, adică vezi cât de fapt nu pleacă cu ce cel mai rapid.
+00:02:40.595 --> 00:02:41.015
+Calin Vlad
+Ok.
+00:02:44.685 --> 00:02:45.395
+Calin Vlad
+Audi a.
+00:02:44.955 --> 00:02:56.175
+Cosmin Ghinea
+Noi noi mod normal trebuie să avem textul, deci nu prea contează că dacă video captează și sunetul e perfect, dacă video, dacă pentru video trebuie să faci 2 pași.
+00:02:57.025 --> 00:03:09.125
+Cosmin Ghinea
+Că habar n-am și atunci pleacă doar cu audio. Dacă constați că nu știu codecuri, nu-mi dau seama ce probleme pot fi p audio, dar poți să iei din video sunetul, ok?
+00:02:58.015 --> 00:02:59.235
+Calin Vlad
+Î.
+00:03:06.805 --> 00:03:07.615
+Calin Vlad
+N-ar trebui.
+00:03:10.285 --> 00:03:14.855
+Calin Vlad
+Da pot să fac record in doar de audio fără video, ceea ce ar fi și mai ieftin.
+00:03:15.555 --> 00:03:28.135
+Cosmin Ghinea
+Da da putem la început așa, adică pentru obiectivul KGB ului nostru 9 ne trebuie de fapt ă minuta sau mă rog, sumarul ședinței sau spune-i *** vrei ă ceea ce?
+00:03:29.115 --> 00:03:58.495
+Cosmin Ghinea
+Pentru obiectivul nostru de inv. Nu nu avem nevoie de video cancer la alte licori să ne ducem să vedem în minutul 3 dacă m-am scărpinat în cap, adică să văd și imagine și poate asta când o să fie prezentări atașate că acolo are sens să captez și prezentarea, dar neata neata ori scop tu de bine și pare că doar pe audio reușești astăzi, adică luni, când intrăm cu el în n și faceți sumarul minut. Discuție de luni, ești optimist sau NU ești optimist.
+00:03:38.455 --> 00:03:38.895
+Calin Vlad
+Da.
+00:03:59.535 --> 00:04:03.835
+Calin Vlad
+Luni să facă și sumarul, nu nu cred.
+00:04:04.485 --> 00:04:06.035
+Calin Vlad
+Pentru că trebuie să audio.
+00:04:04.555 --> 00:04:06.875
+Cosmin Ghinea
+Sumarul nu că să înregistreze.
+00:04:07.515 --> 00:04:10.345
+Calin Vlad
+Să înregistreze da asta ar fi.
+00:04:09.365 --> 00:04:16.695
+Cosmin Ghinea
+Dacă luni, când intrăm în ședință n și înregistrează, va fi simplu să ne dea fișierul înregistrat brut că după Aia Băgăm.
+00:04:14.735 --> 00:04:17.535
+Calin Vlad
+Exact da asta vreau.
+00:04:18.285 --> 00:04:20.285
+Cosmin Ghinea
+Ok AH ce tare ar fi.
+00:04:19.595 --> 00:04:31.985
+Calin Vlad
+Tot așa am intrat în miting, au înregistrat mitingul, noi am terminat mitingul și la un moment dat îl trimite sau trebuie sa am acces la fișier pe care pot să-l fac text și după să mori mai întâi fișierul.
+00:04:31.185 --> 00:04:31.645
+Cosmin Ghinea
+Îhî.
+00:04:32.985 --> 00:04:35.875
+Cosmin Ghinea
+Și fișierul așa *** vezi acum ce formațiile da?
+00:04:36.855 --> 00:04:37.965
+Cosmin Ghinea
+Sau tu decizi.
+00:04:37.485 --> 00:04:46.165
+Calin Vlad
+Nu prea mă interesează în ce formație, cât timp e audio, ceea ce va trebui să mapezi și încă nu știu este vocile.
+00:04:47.205 --> 00:04:51.235
+Cosmin Ghinea
+Dar să știi în fiecare minut. Acum a vorbit cosmin acum călin acum X.
+00:04:50.775 --> 00:04:53.375
+Calin Vlad
+Da exact asta va fi.
+00:04:54.195 --> 00:05:00.385
+Calin Vlad
+Asta încheie cu necunoscut, *** voi mapa, vocile, dar în primă fază vreau să iau doar text.
+00:05:01.705 --> 00:05:02.915
+Calin Vlad
+Și să mă ocup și de voce.
+00:05:03.555 --> 00:05:13.645
+Cosmin Ghinea
+Ok mai normal așa văd și dacă folosești selenium ar trebui să detecteze fiecare fereastră și să iei măcar după time stamp.
+00:05:11.885 --> 00:05:16.735
+Calin Vlad
+Da asta am zis în mitingul trecut să-mi fac, în timp ce dăm cu fiecare.
+00:05:14.305 --> 00:05:16.235
+Cosmin Ghinea
+Da și să iei măcar după Times team.
+00:05:17.455 --> 00:05:21.845
+Calin Vlad
+Cine a vorbit a vorbit la 8 minutul secunda Aia, OK?
+00:05:17.595 --> 00:05:17.885
+Cosmin Ghinea
+Da.
+00:05:21.495 --> 00:05:21.805
+Cosmin Ghinea
+Da.
+00:05:22.755 --> 00:05:23.915
+Calin Vlad
+Meci cu datele.
+00:05:25.165 --> 00:05:29.815
+Cosmin Ghinea
+Dacă și dacă, dacă și datele când te înregistrezi au tot așa posac.
+00:05:31.365 --> 00:05:43.395
+Cosmin Ghinea
+Voiam să zic o sacadare, o scadență, un interval de timp și la fiecare frază *** avem ă am deschis by 2 pentru că suntem în timp și am deschis transcriptul nu și dacă îl vezi în chat *** ar veni.
+00:05:42.995 --> 00:05:43.525
+Calin Vlad
+Î.
+00:05:44.235 --> 00:05:44.835
+Cosmin Ghinea
+Îl vezi?
+00:05:44.525 --> 00:05:46.185
+Calin Vlad
+Transcrie îl văd.
+00:05:46.535 --> 00:05:47.475
+Cosmin Ghinea
+Ok deci tras.
+00:05:46.995 --> 00:05:48.385
+Calin Vlad
+Dar nu văd ce face?
+00:05:49.525 --> 00:05:56.225
+Cosmin Ghinea
+Ah, o să-ți dau mai târziu. Cert este că fiecare să îți dau un print screen, fiecare propoziție pe care o spuneam.
+00:05:54.105 --> 00:05:54.475
+Calin Vlad
+Te rog.
+00:05:58.355 --> 00:06:02.655
+Cosmin Ghinea
+Are un timestamp am pus pe discord ă poza.
+00:05:58.405 --> 00:05:58.935
+Calin Vlad
+Ok.
+00:06:08.335 --> 00:06:19.295
+Cosmin Ghinea
+Deci tu oficial al lui Tul oficial al lui Timis că i-am dat transcript și după aia o să salvez discuția asta și teama bine. O să fie un fișier pe care îl putem pune să testăm.
+00:06:08.655 --> 00:06:08.985
+Calin Vlad
+Ah.
+00:06:09.055 --> 00:06:09.815
+Calin Vlad
+Da.
+00:06:21.405 --> 00:06:22.895
+Calin Vlad
+Da foarte frumos este.
+00:06:22.075 --> 00:06:35.675
+Cosmin Ghinea
+Asta putem să știi și dacă vezi fiecare ă. Deci el identifică cu inițialele noastre și ce fereastră și ce a zis cu o oarecare acuratețe, dar sigur și minutul.
+00:06:39.785 --> 00:06:42.695
+Calin Vlad
+Dar nu e atât de ciudat pe cât mă așteptam.
+00:06:41.605 --> 00:06:45.085
+Cosmin Ghinea
+Nu e nu e nu e pe engleza e mai corect decât pe româna.
+00:06:45.185 --> 00:06:46.315
+Calin Vlad
+Ah suntem OK.
+00:06:46.835 --> 00:07:11.465
+Cosmin Ghinea
+În mitingurile pe engleză e mult mai bine, dar asta nu contează. Important e să simți, adică într-o primă fază importantă, să aibă 1, 90, %90 și ceva la sută acuratețe știm ă și dup aia mai vedem da bai 2 dacă totuși să facem testul ăsta că o să-mi salvez un fișier, sper că pot să-l salvez ușor noapte stat încă din timp, după care o să ți-l dau ție să-l pui în.
+00:06:53.575 --> 00:06:54.195
+Calin Vlad
+Da.
+00:07:12.535 --> 00:07:27.765
+Cosmin Ghinea
+Rezultatul inchipui o să și trimită după Aia Petre noi 2 minute. Hai să facem un sumar că tot avem un ai care le gestionează un sumar al săptămânii și începe tu așa. O chema trebuie să fie farmacie luni, ce am făcut marți ce am făcut?
+00:07:13.225 --> 00:07:13.665
+Calin Vlad
+Î.
+00:07:18.645 --> 00:07:18.865
+Calin Vlad
+Da.
+00:07:28.935 --> 00:07:30.445
+Calin Vlad
+Avem și notez ce fac?
+00:07:31.415 --> 00:07:32.215
+Cosmin Ghinea
+Cu atât mai bine.
+00:07:31.955 --> 00:07:32.635
+Calin Vlad
+Uite.
+00:07:35.785 --> 00:07:38.835
+Calin Vlad
+Așa, luni pe 8 P 8.
+00:07:39.765 --> 00:07:47.595
+Calin Vlad
+Ăăăă am făcut partea de yui care să trimită notificarea pe MAIL, am unit și UE cu mailuri lungi.
+00:07:47.355 --> 00:07:51.355
+Cosmin Ghinea
+Perfect și practic așa am încheiat ă sprintul unu.
+00:07:52.335 --> 00:07:52.945
+Calin Vlad
+Da.
+00:07:53.355 --> 00:08:01.485
+Cosmin Ghinea
+Ok, deci luni a fost ziua în care am terminat prima săptămână de sprint, în care la final eu vorbesc așa pentru aia în care la final.
+00:07:59.455 --> 00:08:00.325
+Calin Vlad
+Da știu.
+00:08:02.175 --> 00:08:04.595
+Cosmin Ghinea
+Avem am trecut prin.
+00:08:05.375 --> 00:08:16.995
+Cosmin Ghinea
+Generalist vorbind următoarele etape, a avem un fișier brut al conversației. Acest fișier a fost încărcat în softul nostru de nota cher.
+00:08:18.045 --> 00:08:20.135
+Cosmin Ghinea
+Softul nostru ă.
+00:08:21.255 --> 00:08:52.095
+Cosmin Ghinea
+Citește, îl ne dă un rezumat. Conform unor cerințe predefinite de către noi de tip rezumat ședință cu mai multe capitole, obiectivul ședinței excel plan, fiecare ce are de făcut, cine ce a zis atât acel sumar într-o primă fază, sumar al ședinței sau minuta ședinței se trimite într-un format pdf, gif către adresa de email predefinite. În mod normal se vor trimite către adresa de email.
+00:08:52.655 --> 00:08:55.525
+Cosmin Ghinea
+A celui care inițiază discuția.
+00:08:56.195 --> 00:09:01.205
+Cosmin Ghinea
+Și tot în cadrul primului sprint am stabilit că avem un.
+00:09:01.995 --> 00:09:03.065
+Cosmin Ghinea
+O interfață.
+00:09:03.735 --> 00:09:11.165
+Cosmin Ghinea
+Cât de simplă se poate pentru faza asta de inppi și am folosit un model mai mult sau mai puțin similar cu ce a reui transfer.
+00:09:13.205 --> 00:09:13.565
+Calin Vlad
+Ok.
+00:09:14.125 --> 00:09:34.005
+Cosmin Ghinea
+Perfect bun sper că neînregistrat ai ăsta a fost printul. Sprintul II este cel în care ne propunem să înregistrăm audio, poate și video, dar în primul rând audio și să facem spiritul text și să obținem un fișier, astfel încât în final acest fișier se încarce în turul obținut în sprint unu și mai departe zi de marți încoace.
+00:09:35.285 --> 00:09:41.935
+Calin Vlad
+Marți a fost pentru sprintul II partea de listări aici, pentru că nu știam care va fi abordarea.
+00:09:42.865 --> 00:09:44.445
+Calin Vlad
+În urma exercițiului am.
+00:09:45.295 --> 00:09:50.515
+Calin Vlad
+Ajuns la varianta pe care am prezentat-o astăzi cu seleniu care îți intră în mitingul.
+00:09:53.425 --> 00:09:56.495
+Calin Vlad
+Nicio *** se numesc bot în bot.
+00:09:55.785 --> 00:09:59.105
+Cosmin Ghinea
+Un bot care ca un user sau, mă rog.
+00:09:58.845 --> 00:10:03.545
+Calin Vlad
+Da un vot care ca un user, deci marți a fost partea de risc să-și putem asta.
+00:10:04.265 --> 00:10:08.085
+Calin Vlad
+Și am stabilit cât de cât o direcție, o să încercăm cu ssl.
+00:10:09.115 --> 00:10:09.965
+Calin Vlad
+Miercuri.
+00:10:11.235 --> 00:10:12.185
+Calin Vlad
+Miercuri 5.
+00:10:14.815 --> 00:10:18.925
+Calin Vlad
+Am fost încercarea unu de a face asta care a eșuat.
+00:10:20.665 --> 00:10:21.165
+Cosmin Ghinea
+Ok.
+00:10:20.755 --> 00:10:28.755
+Calin Vlad
+În care să fac totul, să intre în miting în prima fază, nume ieșit din motive de Microsoft teams și de browser.
+00:10:29.415 --> 00:10:29.975
+Cosmin Ghinea
+Ok.
+00:10:29.675 --> 00:10:33.375
+Calin Vlad
+Trăiește chestii în browser care merge dezactivată.
+00:10:34.495 --> 00:10:37.665
+Calin Vlad
+Joi Din fericire, le-am dezactivat și am reușit să intru în el.
+00:10:38.615 --> 00:10:39.395
+Cosmin Ghinea
+Întrebare.
+00:10:40.525 --> 00:10:48.115
+Cosmin Ghinea
+Orice browser ai făcut o setare care este valabil pentru orice browser sau în pentru inv pe userii trebuie să intre pe chrome sau barna.
+00:10:48.695 --> 00:10:50.785
+Calin Vlad
+Nu nu contează pe ce browser intri.
+00:10:51.245 --> 00:10:51.725
+Cosmin Ghinea
+Ok.
+00:10:52.215 --> 00:10:55.545
+Calin Vlad
+E tipul de browser pe care merge botul.
+00:10:57.355 --> 00:10:59.355
+Cosmin Ghinea
+Pentru că, de fapt botuș deschide.
+00:10:59.945 --> 00:11:00.355
+Calin Vlad
+Da.
+00:11:00.215 --> 00:11:03.005
+Cosmin Ghinea
+Browser ul *** ar veni ok buni.
+00:11:01.865 --> 00:11:09.005
+Calin Vlad
+Da acest browser la final va trebui să fie se numește handles, nu mai pornește nicăieri, e doar un cod.
+00:11:10.945 --> 00:11:21.305
+Cosmin Ghinea
+Ok perfect bun și ca să terminăm sprint ul nostru care în mod normal se termină luni seara. Astăzi îți propui să faci zi pentru EDEN ul nostru.
+00:11:20.675 --> 00:11:24.725
+Calin Vlad
+Dacă ar fi să dau definiții și 5 de ani pe acest.
+00:11:25.655 --> 00:11:26.075
+Cosmin Ghinea
+Da.
+00:11:26.155 --> 00:11:28.655
+Calin Vlad
+Prin 2 ar fi să accesăm datele.
+00:11:29.915 --> 00:11:32.625
+Cosmin Ghinea
+Ok, deci practic la finalul.
+00:11:30.725 --> 00:11:33.275
+Calin Vlad
+Atât avem audio meeting.
+00:11:34.035 --> 00:11:54.175
+Cosmin Ghinea
+La finalul sprintului să avem mitingul de audio într-un format într-un fișier de orice fel ideal text. Probabil sau nu contează că par să și-l facem text și acest text să-l unim cu tull pe care le-am făcut în sprint unu, adică să-l dacă îl avem să găsim o cale să se încarce automat să nu mai facă user ul.
+00:11:40.355 --> 00:11:40.795
+Calin Vlad
+Da.
+00:11:49.965 --> 00:11:50.215
+Calin Vlad
+Da.
+00:11:54.955 --> 00:11:56.045
+Cosmin Ghinea
+Un clic în plus.
+00:11:56.885 --> 00:11:57.305
+Calin Vlad
+Da.
+00:11:57.885 --> 00:12:14.315
+Cosmin Ghinea
+Și în felul ăsta avem un produs de tip Emv complet în care avem un miting. Botul intră în miting înregistrează, nu contează *** salvează datele sau înregistrate face spiritul text, textul salvează într-un fișier de orice formă acest.
+00:12:15.985 --> 00:12:23.745
+Cosmin Ghinea
+Texte rezultatul este pus în turul de la unu. Este analizat de către micul nostru Lama.
+00:12:24.655 --> 00:12:32.725
+Cosmin Ghinea
+Și obține minuta ședinței și iată 2 săptămâni încheiate cu succes și după Aia o să discutăm, de exemplu.
+00:12:33.745 --> 00:12:56.305
+Cosmin Ghinea
+Săptămâna viitoare, câteva zile mai înainte, să pleci, să BEI, bere pragheză, să vedem *** putem să-l facem să arate și un pic mai sensibil ca să facem un demo că vreau să-l punem și pe anton să îți seteze un mini server undeva. Dacă mai ții minte am discutat asta și să și începem să-l folosim, sperând că totul e OK și nu constatăm că e ceva pe traseu.
+00:12:33.975 --> 00:12:34.395
+Calin Vlad
+Da.
+00:12:43.855 --> 00:12:44.495
+Calin Vlad
+Î.
+00:12:57.335 --> 00:12:57.965
+Calin Vlad
+Da.
+00:12:58.385 --> 00:13:04.775
+Cosmin Ghinea
+Adică obiectiv este să avem un produs chiar și într-o fază evident de tip da, care să funcționeze și să își facă treaba și.
+00:13:06.575 --> 00:13:08.345
+Calin Vlad
+Â OK.
+00:13:07.845 --> 00:13:15.625
+Cosmin Ghinea
+Super bine, păi cam atâta sper că s-a înregistrat, sper că poți să salvezi fișierul și ți-l trimit imediat *** am să-l dau pe.
+00:13:17.155 --> 00:13:24.405
+Cosmin Ghinea
+Pe discord pune tu un tool să ne și trimită astăzi ca să ne putem uita și.
+00:13:24.725 --> 00:13:31.215
+Calin Vlad
+Da întrebarea dv nu are un server propriu la Birou de Fan.
+00:13:26.645 --> 00:13:27.045
+Cosmin Ghinea
+Te rog.
+00:13:32.415 --> 00:13:33.665
+Calin Vlad
+Și experimentari, nu?
+00:13:32.825 --> 00:13:36.605
+Cosmin Ghinea
+Nu știu să-ți răspund, dar o să vorbesc cu anton sigur, găsim o soluție.
+00:13:35.155 --> 00:13:35.875
+Calin Vlad
+Nu cred.
+00:13:36.875 --> 00:13:37.315
+Calin Vlad
+Ok.
+00:13:37.715 --> 00:13:47.225
+Cosmin Ghinea
+Deci nu privim, din punctul meu de vedere, va decide el că e la noi, că e serverul sub un birou, că luăm pe hazna vreo resursă îți arhim.
+00:13:43.125 --> 00:13:43.975
+Calin Vlad
+Î.
+00:13:47.995 --> 00:13:48.365
+Calin Vlad
+Ok.
+00:13:48.645 --> 00:13:53.455
+Cosmin Ghinea
+Noi avem o abordare clasică de tip produs, avem produsul hosteaza undeva astfel încât.
+00:13:55.215 --> 00:14:02.935
+Cosmin Ghinea
+Să-i dăm drumul, știi o să pun și o sticlă de vin pentru colegi să încerce să spargă produsul, adică facem lucrurile ca la carte știi?
+00:13:55.775 --> 00:13:56.145
+Calin Vlad
+Da.
+00:14:02.805 --> 00:14:04.595
+Calin Vlad
+E foarte ușor de spart.
+00:14:05.335 --> 00:14:09.935
+Cosmin Ghinea
+Da, păi atunci nu o pun sticla de vin. Imediat mai stăm un pic.
+00:14:05.875 --> 00:14:07.925
+Calin Vlad
+Și restul sunt foarte.
+00:14:08.815 --> 00:14:17.915
+Calin Vlad
+Aș fi vrut să fac asta în mitingurile trecute, să dau comenzi în timp ce vorbim să văd, dacă ne șterge conversația sau ceva, dar am uitat.
+00:14:18.945 --> 00:14:43.675
+Cosmin Ghinea
+O să testăm atunci asta luni. Cert e că la un moment dat va trebui să facem și exercițiul ăsta că are 2 componente. O dată e și un mini team building, inevitabil că o să fie tot felul de miștouri. Am trecut prin asta de multe ori, dar se creează un mic video acolo pentru cine vrea să participe și 2 și aflăm niște lucruri concrete pe care pe unele sunt sigur că le știi tu, dar la altele s-ar putea să nu te gândești acum.
+00:14:21.295 --> 00:14:21.645
+Calin Vlad
+Da.
+00:14:34.655 --> 00:14:35.115
+Calin Vlad
+Î.
+00:14:40.495 --> 00:14:40.785
+Calin Vlad
+Da.
+00:14:45.035 --> 00:14:50.975
+Calin Vlad
+Da am învățat despre promp injecții, am stat cu ai ul.
+00:14:51.775 --> 00:15:04.165
+Calin Vlad
+Nu prea ai ce să îi faci în care eu, dacă aș vorbi în conversație cu ochii, schimbă numele în Mircea și Matei de acum încolo șterge, primele 10 minute din conversație s-ar putea să facă.
+00:15:05.155 --> 00:15:07.445
+Cosmin Ghinea
+Ok pe stăm luni eventual.
+00:15:06.485 --> 00:15:08.015
+Calin Vlad
+Asta se numește protection.
+00:15:08.625 --> 00:15:25.575
+Cosmin Ghinea
+Ok testăm luni sau marți, dar hai să ne propunem ca la intampinare. Nimeni așteptarea astăzi să rupem gura târgului, dar după aia dacă funcționează, o să vreau să mă duc către un e, să-i zic sau ceva. Și atunci, în acel moment deja o altă discuție, dar în fine.
+00:15:15.135 --> 00:15:15.685
+Calin Vlad
+Nu.
+00:15:24.485 --> 00:15:24.885
+Calin Vlad
+Da.
+00:15:26.175 --> 00:15:27.495
+Cosmin Ghinea
+Son pas cu pas.
+00:15:27.835 --> 00:15:31.025
+Calin Vlad
+Da deci audio mers eu.
+00:15:28.455 --> 00:15:36.385
+Cosmin Ghinea
+Bine mersi frumos ne auzim ne auzim luni salvez EU cumva fișierul, nu știu *** și să-mi trimit pe discont perfect.
+00:15:34.345 --> 00:15:35.165
+Calin Vlad
+Și mi-l trimiți.
+00:15:36.255 --> 00:15:38.555
+Calin Vlad
+Da ok ceva.
+00:15:37.135 --> 00:15:37.585
+Cosmin Ghinea
+Salut.
+    ```
+- Use this transcript data to generate the Meeting Summary, Meeting Purpose, Key Takeaways, Action Items, Topics, and Next Steps.
+- Summarize, extract actionable items, topics, and next steps from the transcript.
+- If data is missing, leave placeholders.
+
+3) HTML & CSS requirements
+- Produce a single, self-contained HTML file with <head> and <style> block (no external CSS or JS).
+- Use semantic HTML elements: header, main, section, article, ul/ol/li, table, pre, footer where appropriate.
+- Include inline CSS classes and a <style> section implementing the visual rules below.
+- Do not include any scripts that fetch or run external resources.
+
+4) Visual & typography rules
+- Title: bold, easy-to-read, visually equivalent to H1, large font-size.
+- Date & Duration: small font-size, grey color, informational style.
+- Participants section heading: H2, medium font.
+- Participant entries: normal body text.
+- Meeting Summary heading: H2, medium font.
+- Meeting Purpose: label "Meeting Purpose" bold; follow-up text normal font, 1–2 paragraphs.
+- Key Takeaways: label bold; each takeaway as bullet (ul > li), normal text.
+- Action Items heading: H2; display all action items in a table with three columns: "Person(s)", "Item", "Due Date". Style the table with borders, optional striped rows, and due date in small grey font similar to Date & Duration.
+- Topics heading: H2; each topic title bold; descriptions normal text; sub-bullets allowed.
+- Next Steps heading: H2; each person bold; their next step(s) as bullets in normal text.
+
+5) Accessibility & formatting
+- Use readable font-family (system stack), adequate line-height, and good contrast (grey elements readable).
+- Use proper heading structure, lists, and table markup for accessibility.
+- Include data- attributes on key elements for parsing, e.g., data-section="participants", data-item="action-item".
+
+6) Layout
+- Header block with Meeting Title and Date/Duration.
+- Main sections in this order: Participants, Meeting Summary, Meeting Purpose, Key Takeaways, Action Items (as table), Topics, Next Steps.
+- Footer optional.
+
+7) Output rule
+- Output only the HTML document, nothing else. Do not write explanations, notes, or text outside the HTML.
+
+        

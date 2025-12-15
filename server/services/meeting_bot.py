@@ -1,8 +1,12 @@
+import signal
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
+
+from .recording_service import RecordingService
 
 # Selenium service will be moved separately
 
@@ -29,9 +33,12 @@ class MeetingBot:
             options=options,
         )
 
-        wait = WebDriverWait(driver, 25)
+        # Wait for 10 minutes, check every 5 seconds
+        wait = WebDriverWait(driver, timeout=600, poll_frequency=5)
 
         driver.get(self.meeting_url)
+
+        ffmpeg_process = None
         print(f"accessed meeting {self.meeting_url}")
 
         try:
@@ -89,5 +96,18 @@ class MeetingBot:
             )
             print("meeting started")
 
+            # This should be a separate thread
+            recording_service = RecordingService()
+            ffmpeg_process = recording_service.start()
+
+            # Waiting for meeting to finish should be another thread
+            # To write an ending meeting service to handle no participants in meeting, or being kicked out of it
+
         except Exception as e:
             print(f"something went wrong {e}")
+            ffmpeg_process.send_signal(signal.SIGINT)
+            ffmpeg_process.wait()
+            print("stopped ffmpeg")
+
+            driver.quit()
+            print("stopped session")
