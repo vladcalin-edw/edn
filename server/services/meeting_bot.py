@@ -20,7 +20,7 @@ class MeetingBot:
 
     def access_meeting(self):
         chrome_prefs = {
-            "profile.default_content_setting_values.media_stream_mic": 2,
+            "profile.default_content_setting_values.media_stream_mic": 1,
             "profile.default_content_setting_values.media_stream_camera": 2,
         }
 
@@ -28,6 +28,7 @@ class MeetingBot:
         options.add_experimental_option("prefs", chrome_prefs)
         options.add_argument("--disable-infobars")
         options.add_argument("--disable-extensions")
+        options.add_argument("--autoplay-policy=no-user-gesture-required")
 
         driver = webdriver.Chrome(
             options=options,
@@ -61,6 +62,7 @@ class MeetingBot:
                     )
                 )
             )
+
             button_no_audio_video.click()
             print("clicked Continue without audio or video")
 
@@ -96,8 +98,20 @@ class MeetingBot:
             )
             print("meeting started")
 
+            button_choose_browser = wait.until(
+                EC.element_to_be_clickable(
+                    (
+                        By.CSS_SELECTOR,
+                        "button[aria-label='Mute mic']",
+                    )
+                )
+            )
+            button_choose_browser.click()
+            print("clicked mute mic")
+
             # This should be a separate thread
             recording_service = RecordingService()
+            recording_service.set_device_number()
             ffmpeg_process = recording_service.start()
 
             # Waiting for meeting to finish should be another thread

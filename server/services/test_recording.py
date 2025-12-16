@@ -11,7 +11,7 @@ OUTPUT_FILE = "logs/recordings/youtube_audio.wav"
 
 def start_ffmpeg_recording():
     # ffmpeg -f avfoundation -i ":0" -t 15 sanity.wav
-    cmd = ["ffmpeg", "-f", "avfoundation", "-i", ":0", OUTPUT_FILE]  # change per OS
+    cmd = ["ffmpeg", "-f", "avfoundation", "-i", ":1", OUTPUT_FILE]  # change per OS
     return subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 
