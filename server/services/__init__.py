@@ -4,3 +4,4 @@ from .email_service import EmailService
 from .summarize_service import SummarizeService
 from .meeting_bot import MeetingBot
 from .recording_service import RecordingService
+from .transcribe_service import TranscribeService

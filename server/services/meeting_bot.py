@@ -34,7 +34,7 @@ class MeetingBot:
             options=options,
         )
 
-        # Wait for 10 minutes, check every 5 seconds
+        # Wait for 10 minutes, check every 5 seconds | This is a problem for existing waiting...
         wait = WebDriverWait(driver, timeout=600, poll_frequency=5)
 
         driver.get(self.meeting_url)
