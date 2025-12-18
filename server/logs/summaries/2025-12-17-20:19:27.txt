@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Meeting Notes</title>
+<style>
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 1rem;
+    background: #fafafa;
+    color: #333;
+  }
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+  }
+  header .date {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .label-bold {
+    font-weight: bold;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  tbody tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  .due-date {
+    font-size: 0.85rem;
+    color: #777;
+  }
+  footer {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #555;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<header data-section="header">
+  <h1><Meeting Title></h1>
+  <p class="date"><Date in format: December 5, 2025. Duration (when known)></p>
+</header>
+
+<main>
+  <section data-section="participants">
+    <h2>Participants</h2>
+    <ul>
+      <li><Participant 1></li>
+      <li><Participant 2></li>
+      <li><Participant 3></li>
+    </ul>
+  </section>
+
+  <section data-section="meeting-summary">
+    <h2>Meeting Summary</h2>
+    <p><Meeting Summary></p>
+  </section>
+
+  <section data-section="meeting-purpose">
+    <h2>Meeting Purpose</h2>
+    <p class="label-bold">Meeting Purpose:</p>
+    <p><Meeting Purpose></p>
+  </section>
+
+  <section data-section="key-takeaways">
+    <h2>Key Takeaways</h2>
+    <p class="label-bold">Key Takeaways:</p>
+    <ul>
+      <li><Key Takeaway 1></li>
+      <li><Key Takeaway 2></li>
+      <li><Key Takeaway 3></li>
+    </ul>
+  </section>
+
+  <section data-section="action-items">
+    <h2>Action Items</h2>
+    <table data-item="action-item">
+      <thead>
+        <tr>
+          <th>Person(s)</th>
+          <th>Item</th>
+          <th>Due Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><Person 1></td>
+          <td><Action Item 1></td>
+          <td class="due-date"><Due Date 1></td>
+        </tr>
+        <tr>
+          <td><Person 2></td>
+          <td><Action Item 2></td>
+          <td class="due-date"><Due Date 2></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section data-section="topics">
+    <h2>Topics</h2>
+    <p class="label-bold">Teams audio permissions</p>
+    <p><Topic Description 1></p>
+    <p class="label-bold">Transcription extraction</p>
+    <p><Topic Description 2></p>
+    <p class="label-bold">Speaker labeling</p>
+    <p><Topic Description 3></p>
+    <p class="label-bold">Demo scheduling</p>
+    <p><Topic Description 4></p>
+    <p class="label-bold">Upload to MVP</p>
+    <p><Topic Description 5></p>
+  </section>
+
+  <section data-section="next-steps">
+    <h2>Next Steps</h2>
+    <p><strong>Participant 1</strong></p>
+    <ul>
+      <li><Next Step 1.1></li>
+      <li><Next Step 1.2></li>
+    </ul>
+    <p><strong>Participant 2</strong></p>
+    <ul>
+      <li><Next Step 2.1></li>
+      <li><Next Step 2.2></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  &copy; <Current Year>
+</footer>
+</body>
+</html>

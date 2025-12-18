@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Meeting Notes</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.6;margin:0;padding:0;}
+  header{background:#f5f5f5;padding:1rem 1.5rem;}
+  .title{font-size:2rem;font-weight:bold;margin:0;}
+  .date{font-size:0.9rem;color:#666;margin-top:0.25rem;}
+  main{padding:1.5rem;}
+  h2{font-size:1.5rem;margin-top:1.5rem;margin-bottom:0.5rem;}
+  .label{font-weight:bold;}
+  .small-grey{font-size:0.9rem;color:#666;}
+  table{width:100%;border-collapse:collapse;margin-top:0.5rem;}
+  th,td{border:1px solid #ddd;padding:0.75rem;text-align:left;}
+  tbody tr:nth-child(even){background:#fafafa;}
+  tbody tr:hover{background:#f0f0f0;}
+  ul{margin-top:0.5rem;}
+  li{margin-bottom:0.3rem;}
+  footer{background:#f5f5f5;padding:1rem 1.5rem;text-align:center;font-size:0.9rem;color:#666;margin-top:2rem;}
+</style>
+</head>
+<body>
+<header>
+  <h1 class="title" data-section="title">Audio Recording Issue & Transcript Review</h1>
+  <div class="date" data-section="date">December 5, 2025. Duration 45m</div>
+</header>
+<main>
+  <section data-section="participants">
+    <h2>Participants</h2>
+    <ul>
+      <li>Organizator</li>
+      <li>Calin</li>
+      <li>Alec Covai</li>
+    </ul>
+  </section>
+  <section data-section="summary">
+    <h2>Meeting Summary</h2>
+    <p>The team discussed a Teams recording issue caused by missing microphone permissions. They reviewed steps to confirm permission changes, generate a transcript from the audio, and load it into MVP1. Plans to demo the solution with Alec Covai were also outlined, along with follow‑up actions to verify audio capture and speaker mapping.</p>
+  </section>
+  <section data-section="purpose">
+    <h2>Meeting Purpose</h2>
+    <p class="label">Meeting Purpose:</p>
+    <p>The purpose of this meeting was to troubleshoot Teams audio recording problems, ensure accurate transcript generation, and prepare a demonstration for stakeholders.</p>
+  </section>
+  <section data-section="takeaways">
+    <h2>Key Takeaways</h2>
+    <ul>
+      <li>Teams requires microphone permission for audio to be captured.</li>
+      <li>Permission issues caused the recording to be silent.</li>
+      <li>Transcript generation will be performed via speech‑to‑text.</li>
+      <li>Speaker mapping will be verified in the transcript.</li>
+      <li>A demo with Alec Covai is scheduled for tomorrow.</li>
+    </ul>
+  </section>
+  <section data-section="action-items">
+    <h2>Action Items</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Person(s)</th>
+          <th>Item</th>
+          <th>Due Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-item="action-item">
+          <td>Organizator</td>
+          <td>Confirm microphone permission is enabled in Teams</td>
+          <td class="small-grey">Today</td>
+        </tr>
+        <tr data-item="action-item">
+          <td>Calin</td>
+          <td>Create transcript from the audio recording</td>
+          <td class="small-grey">Today</td>
+        </tr>
+        <tr data-item="action-item">
+          <td>Calin</td>
+          <td>Upload transcript into MVP1 and verify speaker tags</td>
+          <td class="small-grey">Tomorrow</td>
+        </tr>
+        <tr data-item="action-item">
+          <td>Calin & Organizator</td>
+          <td>Coordinate demo with Alec Covai</td>
+          <td class="small-grey">Tomorrow</td>
+        </tr>
+        <tr data-item="action-item">
+          <td>Organizator</td>
+          <td>Confirm that audio was successfully recorded</td>
+          <td class="small-grey">Today</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section data-section="topics">
+    <h2>Topics</h2>
+    <p><strong>Audio Permissions</strong> – Discussed the need for Teams microphone access.</p>
+    <p><strong>Transcript Generation</strong> – Planned to use speech‑to‑text to produce speaker‑labeled text.</p>
+    <p><strong>Demo Planning</strong> – Scheduled a demonstration with stakeholder Alec Covai.</p>
+    <p><strong>Speaker Mapping</strong> – Reviewed how to identify and map speakers in the transcript.</p>
+  </section>
+  <section data-section="next-steps">
+    <h2>Next Steps</h2>
+    <ul>
+      <li><strong>Organizator:</strong> Verify microphone permissions and confirm audio capture.</li>
+      <li><strong>Calin:</strong> Generate transcript, upload to MVP1, and prepare demo.</li>
+      <li><strong>Alec Covai:</strong> Participate in the demo scheduled for tomorrow.</li>
+    </ul>
+  </section>
+</main>
+<footer>
+  &copy; 2025 Company
+</footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+
+
+        You are an AI assistant that MUST output a complete, valid HTML document (<!doctype html> ... </html>) containing meeting notes. Output ONLY the HTML, no explanations, no extra text. Follow these rules exactly:
+
+1) Structure & placeholders
+- Use the following exact placeholders for all data. If actual values are provided, replace the placeholders; otherwise leave them visible:
+  - <Meeting Title>
+  - <Date in format: December 5, 2025. Duration (when known)>
+  - <Participants>
+  - <Participant 1>, <Participant 2>, ...
+  - <Meeting Summary>
+  - <Meeting Purpose>
+  - <Key Takeaways>
+  - <Action Items>
+  - <Topics>
+  - <Next Steps>
+
+2) Input Data
+- You will be provided with the transcript data of the meeting as follows:
+- Transcript Data
+    ```
+     organizatorul sau poate să dea oricine? Poate să dea oricine. Ok. Așa. Am fost un bag minunat. Deci ieri am înregistrat tot meeting-ul, ceea ce a fost bine. Da, aveam 10 minute și 5 minute de recording. Am intrat pe recording eram gol, adică nu auzeam nimic. Ok. Ok. Da. M-am gândit că am greșit. Că pe... cumva când ai start, poți să asculti mai multe audiuri. Ai audio-ul de pe laptop, ai căști sau unul pe care l-am făcut eu custom. Și vedeam că l-am greșit ăla. Aparent nu. De-abia aseară m-am găsit problema. Era de la Teams. De la Teams? Adică? Așa cum ați văzut că botul intră pe mood. Ok. Dacă nu-i dau permisiun de microfon, Teams nu-mi dă audio. Am înțeles. Ok. Adică pur și simplu nu dă sunet mai departe. Și a trebuit să îi dau drumul la microfon, intră în meeting. Ceea ce are... Să te pune pe mood singur. Ok. Da. Și atât. Ok. Deci acum teoretic... O să vedem la finalul zile dacă e așa sau nu. Da. Acum trebuie să meargă. Ok. Să amintesc că e pe legișie pe Holosec. Nu, n-au nimic. Așa am revenit. Bun. Deci avem șanse să facem un demo? Bine. Mâine să zicem. Să luăm pe Alec Covai și să îi zicem. Uite, asta am făcut, asta nu am făcut. Să faceți un demo, poate. Mai bine. Mai am descos transcriptul măcar. Uite, spune că în Phase 1 mapatul de nume pe transcript nu se întâmplă ca timp. Ok. Să-ți oi puțin, nu o văd până la finalul anului. E complicat. Așa că aș fi făcut pe bază transcriptului cu speaker 1, 2, summary-ul. Și pe aia aș putea să fac o prezentare. Ok. E fair enough. Adică măcar arătăm că în astea două săptămâni și două zile. Am făcut astea și mai avem de făcut. Bine. Îl întreb și eventual o să-i zic mâine mai după amiază ca să mai câștigăm și zbădatul. Da. Mâine după amiază sau vinere dacă mai e liber. Ok. Îi propun mâine după amiază sau vinere. Nu-mi dau seama cum e cu concediile el cu astea. Dacă e concediu, o să rămână joie după amiază. Da, ok. E în regulă. Deci eu cu asta mă ocup să scot transcriptul din audio acum. Pe speaker-i. A, și asta e pentru iubitul bot ca să testăm și asta. Da. Iar ai rezolvat problema cu permisiuni și mă rog... Mă urmează să testăm astăzi de fapt dacă s-a rezolvat cu adevărat. Așa ar trebui. Așa ar trebui. Da. Iar astăzi o să faci transcriptul. Adică practic speech to text. Da? Da. Ok. Și la scrisul transcriptului o să avem totul speaker 1, speaker 2, fără să știm cine s-a cei speaker-i. Da. Ok. Dar dacă noi obținem textul transcript, îl poți încărca ulterior în MVP-ul 1 și să obținem... Chiar dacă acolo o să scrie minută, a vorbit speakerul, nu a vorbit... nu contează asta. Adică nu mă denajează acum. Da, pentru că va fi funcțional. Exact asta o fac. Ok. Bun. Păi atunci astăzi dacă... adică imediat după ce terminăm aici o verifică dacă s-a salvat. Da. Și da, la finalul... Da. La finalul zilei sau fine când ai textul, transcriptul, și urcați direct și să-l și primim oricum ar fi. Da. Ok. Așa. Deci acum un temă, nu știu dacă e registrat din botul. Speaker 1, de fapt nu știu după cine îl consideră el speaker 1. Cred că tu ar trebui să fii speaker 1, iar este călind. Speaker 2 este călind. Ăl cred că le-a pe ordin în prima voce, a doua voce. Păi da, dar cine a intrat primul? Adică el, în mod normal, fie admin-ul, fie cine a intrat. De fapt nu a să știe. Dar înscripția e după audio doar. Nu știe cine a intrat în meeting. Cine a vorbit primul? A, bă. CDF? Da. Da. Ok. Bine. Poate vrei. El poate vine și cu speaker 1, speaker 2 și tot aia la fel. Bine, bun. Ne auzim dacă dai o confirmare că s-a luat vocea. Dă-mi un pas scurt ca să știu. Și după aceea oricând ar fi urcat așa, nu e formatat, nu e nimic în MV2, automat o să primim mail-ul respectiv. Super. Bun. Iar eu trebuie să vorbesc cu Alex și îl întreb. E un pas de mâine după amiazuri sau bine? Ok. Bine, la revedere. Ne auzim la vantaj. La revedere.
+    ```
+- Use this transcript data to generate the Meeting Summary, Meeting Purpose, Key Takeaways, Action Items, Topics, and Next Steps.
+- Summarize, extract actionable items, topics, and next steps from the transcript.
+- If data is missing, leave placeholders.
+
+3) HTML & CSS requirements
+- Produce a single, self-contained HTML file with <head> and <style> block (no external CSS or JS).
+- Use semantic HTML elements: header, main, section, article, ul/ol/li, table, pre, footer where appropriate.
+- Include inline CSS classes and a <style> section implementing the visual rules below.
+- Do not include any scripts that fetch or run external resources.
+
+4) Visual & typography rules
+- Title: bold, easy-to-read, visually equivalent to H1, large font-size.
+- Date & Duration: small font-size, grey color, informational style.
+- Participants section heading: H2, medium font.
+- Participant entries: normal body text.
+- Meeting Summary heading: H2, medium font.
+- Meeting Purpose: label "Meeting Purpose" bold; follow-up text normal font, 1–2 paragraphs.
+- Key Takeaways: label bold; each takeaway as bullet (ul > li), normal text.
+- Action Items heading: H2; display all action items in a table with three columns: "Person(s)", "Item", "Due Date". Style the table with borders, optional striped rows, and due date in small grey font similar to Date & Duration.
+- Topics heading: H2; each topic title bold; descriptions normal text; sub-bullets allowed.
+- Next Steps heading: H2; each person bold; their next step(s) as bullets in normal text.
+
+5) Accessibility & formatting
+- Use readable font-family (system stack), adequate line-height, and good contrast (grey elements readable).
+- Use proper heading structure, lists, and table markup for accessibility.
+- Include data- attributes on key elements for parsing, e.g., data-section="participants", data-item="action-item".
+
+6) Layout
+- Header block with Meeting Title and Date/Duration.
+- Main sections in this order: Participants, Meeting Summary, Meeting Purpose, Key Takeaways, Action Items (as table), Topics, Next Steps.
+- Footer optional.
+
+7) Output rule
+- Output only the HTML document, nothing else. Do not write explanations, notes, or text outside the HTML.
+
+        

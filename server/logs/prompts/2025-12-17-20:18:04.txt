@@ -1,0 +1,467 @@
+
+
+        You are an AI assistant that MUST output a complete, valid HTML document (<!doctype html> ... </html>) containing meeting notes. Output ONLY the HTML, no explanations, no extra text. Follow these rules exactly:
+
+1) Structure & placeholders
+- Use the following exact placeholders for all data. If actual values are provided, replace the placeholders; otherwise leave them visible:
+  - <Meeting Title>
+  - <Date in format: December 5, 2025. Duration (when known)>
+  - <Participants>
+  - <Participant 1>, <Participant 2>, ...
+  - <Meeting Summary>
+  - <Meeting Purpose>
+  - <Key Takeaways>
+  - <Action Items>
+  - <Topics>
+  - <Next Steps>
+
+2) Input Data
+- You will be provided with the transcript data of the meeting as follows:
+- Transcript Data
+    ```
+    1
+00:00:00,000 --> 00:00:02,620
+organizatorul sau poate să dea oricine?
+
+2
+00:00:03,120 --> 00:00:04,120
+Poate să dea oricine.
+
+3
+00:00:05,379 --> 00:00:05,580
+Ok.
+
+4
+00:00:06,500 --> 00:00:08,839
+Așa. Am fost un bag minunat.
+
+5
+00:00:09,179 --> 00:00:10,160
+Deci ieri am
+
+6
+00:00:10,160 --> 00:00:12,300
+înregistrat tot meeting-ul,
+
+7
+00:00:12,419 --> 00:00:14,300
+ceea ce a fost bine.
+
+8
+00:00:16,300 --> 00:00:18,160
+Da, aveam 10 minute și
+
+9
+00:00:18,160 --> 00:00:20,339
+5 minute de recording. Am intrat pe recording
+
+10
+00:00:20,339 --> 00:00:22,300
+eram gol, adică nu auzeam nimic.
+
+11
+00:00:23,100 --> 00:00:23,420
+Ok.
+
+12
+00:00:23,420 --> 00:00:23,559
+Ok.
+
+13
+00:00:24,500 --> 00:00:24,660
+Da.
+
+14
+00:00:26,900 --> 00:00:27,920
+M-am gândit că am greșit.
+
+15
+00:00:28,699 --> 00:00:29,219
+Că pe...
+
+16
+00:00:30,000 --> 00:00:31,780
+cumva când ai start, poți să
+
+17
+00:00:31,780 --> 00:00:33,740
+asculti mai multe audiuri.
+
+18
+00:00:33,840 --> 00:00:35,700
+Ai audio-ul de pe laptop, ai căști
+
+19
+00:00:35,700 --> 00:00:37,780
+sau unul pe care l-am făcut eu custom.
+
+20
+00:00:38,380 --> 00:00:39,420
+Și vedeam că l-am greșit ăla.
+
+21
+00:00:39,840 --> 00:00:40,500
+Aparent nu.
+
+22
+00:00:41,859 --> 00:00:43,939
+De-abia aseară m-am găsit problema.
+
+23
+00:00:45,120 --> 00:00:45,740
+Era de la Teams.
+
+24
+00:00:46,879 --> 00:00:47,539
+De la Teams?
+
+25
+00:00:48,019 --> 00:00:48,359
+Adică?
+
+26
+00:00:48,359 --> 00:00:51,280
+Așa cum ați văzut că
+
+27
+00:00:51,280 --> 00:00:52,400
+botul intră
+
+28
+00:00:52,400 --> 00:00:53,000
+pe mood.
+
+29
+00:00:54,280 --> 00:00:54,560
+Ok.
+
+30
+00:00:55,400 --> 00:00:57,240
+Dacă nu-i dau permisiun de microfon,
+
+31
+00:00:58,060 --> 00:00:58,900
+Teams nu-mi dă audio.
+
+32
+00:01:00,000 --> 00:01:01,500
+Am înțeles.
+
+33
+00:01:01,500 --> 00:01:02,000
+Ok.
+
+34
+00:01:02,000 --> 00:01:04,000
+Adică pur și simplu nu dă sunet mai departe.
+
+35
+00:01:04,000 --> 00:01:06,760
+Și a trebuit să îi dau drumul la microfon,
+
+36
+00:01:06,760 --> 00:01:07,760
+intră în meeting.
+
+37
+00:01:07,760 --> 00:01:08,760
+Ceea ce are...
+
+38
+00:01:08,760 --> 00:01:10,760
+Să te pune pe mood singur.
+
+39
+00:01:10,760 --> 00:01:11,760
+Ok.
+
+40
+00:01:11,760 --> 00:01:13,760
+Da. Și atât.
+
+41
+00:01:13,760 --> 00:01:15,760
+Ok. Deci acum teoretic...
+
+42
+00:01:15,760 --> 00:01:18,760
+O să vedem la finalul zile dacă e așa sau nu.
+
+43
+00:01:18,760 --> 00:01:21,760
+Da. Acum trebuie să meargă.
+
+44
+00:01:21,760 --> 00:01:22,760
+Ok.
+
+45
+00:01:22,760 --> 00:01:25,760
+Să amintesc că e pe legișie pe Holosec.
+
+46
+00:01:25,760 --> 00:01:27,760
+Nu, n-au nimic.
+
+47
+00:01:30,000 --> 00:01:37,000
+Așa am revenit. Bun.
+
+48
+00:01:37,000 --> 00:01:40,000
+Deci avem șanse să facem un demo?
+
+49
+00:01:40,000 --> 00:01:43,000
+Bine.
+
+50
+00:01:43,000 --> 00:01:45,000
+Mâine să zicem.
+
+51
+00:01:45,000 --> 00:01:52,000
+Să luăm pe Alec Covai și să îi zicem.
+
+52
+00:01:52,000 --> 00:01:54,000
+Uite, asta am făcut, asta nu am făcut.
+
+53
+00:01:54,000 --> 00:01:58,000
+Să faceți un demo, poate.
+
+54
+00:01:58,000 --> 00:01:59,000
+Mai bine.
+
+55
+00:01:59,000 --> 00:02:01,000
+Mai am descos transcriptul măcar.
+
+56
+00:02:01,000 --> 00:02:07,000
+Uite, spune că în Phase 1 mapatul de nume pe transcript nu se întâmplă ca timp.
+
+57
+00:02:07,000 --> 00:02:08,000
+Ok.
+
+58
+00:02:08,000 --> 00:02:12,000
+Să-ți oi puțin, nu o văd până la finalul anului.
+
+59
+00:02:12,000 --> 00:02:14,000
+E complicat.
+
+60
+00:02:14,000 --> 00:02:20,000
+Așa că aș fi făcut pe bază transcriptului cu speaker 1, 2, summary-ul.
+
+61
+00:02:20,000 --> 00:02:23,000
+Și pe aia aș putea să fac o prezentare.
+
+62
+00:02:23,000 --> 00:02:28,000
+Ok. E fair enough. Adică măcar arătăm că în astea două săptămâni și două zile.
+
+63
+00:02:28,000 --> 00:02:32,000
+Am făcut astea și mai avem de făcut. Bine.
+
+64
+00:02:32,000 --> 00:02:37,000
+Îl întreb și eventual o să-i zic mâine mai după amiază ca să mai câștigăm și zbădatul.
+
+65
+00:02:37,000 --> 00:02:42,000
+Da. Mâine după amiază sau vinere dacă mai e liber.
+
+66
+00:02:42,000 --> 00:02:48,000
+Ok. Îi propun mâine după amiază sau vinere. Nu-mi dau seama cum e cu concediile el cu astea.
+
+67
+00:02:48,000 --> 00:02:50,000
+Dacă e concediu, o să rămână joie după amiază.
+
+68
+00:02:50,000 --> 00:02:53,000
+Da, ok. E în regulă.
+
+69
+00:02:53,000 --> 00:02:57,000
+Deci eu cu asta mă ocup să scot transcriptul din audio acum. Pe speaker-i.
+
+70
+00:02:57,000 --> 00:03:01,000
+A, și asta e pentru iubitul bot ca să testăm și asta.
+
+71
+00:03:01,000 --> 00:03:02,000
+Da.
+
+72
+00:03:02,000 --> 00:03:07,000
+Iar ai rezolvat problema cu permisiuni și mă rog...
+
+73
+00:03:07,000 --> 00:03:12,000
+Mă urmează să testăm astăzi de fapt dacă s-a rezolvat cu adevărat.
+
+74
+00:03:12,000 --> 00:03:16,000
+Așa ar trebui. Așa ar trebui.
+
+75
+00:03:16,000 --> 00:03:21,000
+Da. Iar astăzi o să faci transcriptul. Adică practic speech to text. Da?
+
+76
+00:03:21,000 --> 00:03:22,000
+Da.
+
+77
+00:03:22,000 --> 00:03:26,000
+Ok. Și la scrisul transcriptului o să avem totul speaker 1, speaker 2, fără să știm cine s-a cei speaker-i.
+
+78
+00:03:27,000 --> 00:03:28,000
+Da.
+
+79
+00:03:28,000 --> 00:03:38,000
+Ok. Dar dacă noi obținem textul transcript, îl poți încărca ulterior în MVP-ul 1 și să obținem...
+
+80
+00:03:38,000 --> 00:03:44,000
+Chiar dacă acolo o să scrie minută, a vorbit speakerul, nu a vorbit... nu contează asta. Adică nu mă denajează acum.
+
+81
+00:03:44,000 --> 00:03:48,000
+Da, pentru că va fi funcțional. Exact asta o fac.
+
+82
+00:03:48,000 --> 00:03:54,000
+Ok. Bun. Păi atunci astăzi dacă... adică imediat după ce terminăm aici o verifică dacă s-a salvat.
+
+83
+00:03:54,000 --> 00:03:55,000
+Da.
+
+84
+00:03:55,000 --> 00:03:56,000
+Și da, la finalul...
+
+85
+00:03:56,000 --> 00:04:04,000
+Da. La finalul zilei sau fine când ai textul, transcriptul, și urcați direct și să-l și primim oricum ar fi.
+
+86
+00:04:04,000 --> 00:04:06,000
+Da. Ok. Așa.
+
+87
+00:04:06,000 --> 00:04:11,000
+Deci acum un temă, nu știu dacă e registrat din botul. Speaker 1, de fapt nu știu după cine îl consideră el speaker 1.
+
+88
+00:04:11,000 --> 00:04:15,000
+Cred că tu ar trebui să fii speaker 1, iar este călind. Speaker 2 este călind.
+
+89
+00:04:15,000 --> 00:04:19,000
+Ăl cred că le-a pe ordin în prima voce, a doua voce.
+
+90
+00:04:19,000 --> 00:04:24,000
+Păi da, dar cine a intrat primul? Adică el, în mod normal, fie admin-ul, fie cine a intrat. De fapt nu a să știe.
+
+91
+00:04:24,000 --> 00:04:29,000
+Dar înscripția e după audio doar. Nu știe cine a intrat în meeting. Cine a vorbit primul?
+
+92
+00:04:29,000 --> 00:04:31,000
+A, bă.
+
+93
+00:04:31,000 --> 00:04:32,000
+CDF?
+
+94
+00:04:32,000 --> 00:04:33,000
+Da.
+
+95
+00:04:33,000 --> 00:04:38,000
+Da. Ok. Bine. Poate vrei. El poate vine și cu speaker 1, speaker 2 și tot aia la fel.
+
+96
+00:04:38,000 --> 00:04:44,000
+Bine, bun. Ne auzim dacă dai o confirmare că s-a luat vocea. Dă-mi un pas scurt ca să știu.
+
+97
+00:04:44,000 --> 00:04:52,000
+Și după aceea oricând ar fi urcat așa, nu e formatat, nu e nimic în MV2, automat o să primim mail-ul respectiv.
+
+98
+00:04:52,000 --> 00:04:53,000
+Super. Bun. Iar eu trebuie să vorbesc cu Alex și îl întreb.
+
+99
+00:04:54,000 --> 00:04:56,000
+E un pas de mâine după amiazuri sau bine?
+
+100
+00:04:56,000 --> 00:04:58,000
+Ok. Bine, la revedere.
+
+101
+00:04:58,000 --> 00:04:59,000
+Ne auzim la vantaj.
+
+102
+00:04:59,000 --> 00:05:00,000
+La revedere.
+
+
+    ```
+- Use this transcript data to generate the Meeting Summary, Meeting Purpose, Key Takeaways, Action Items, Topics, and Next Steps.
+- Summarize, extract actionable items, topics, and next steps from the transcript.
+- If data is missing, leave placeholders.
+
+3) HTML & CSS requirements
+- Produce a single, self-contained HTML file with <head> and <style> block (no external CSS or JS).
+- Use semantic HTML elements: header, main, section, article, ul/ol/li, table, pre, footer where appropriate.
+- Include inline CSS classes and a <style> section implementing the visual rules below.
+- Do not include any scripts that fetch or run external resources.
+
+4) Visual & typography rules
+- Title: bold, easy-to-read, visually equivalent to H1, large font-size.
+- Date & Duration: small font-size, grey color, informational style.
+- Participants section heading: H2, medium font.
+- Participant entries: normal body text.
+- Meeting Summary heading: H2, medium font.
+- Meeting Purpose: label "Meeting Purpose" bold; follow-up text normal font, 1–2 paragraphs.
+- Key Takeaways: label bold; each takeaway as bullet (ul > li), normal text.
+- Action Items heading: H2; display all action items in a table with three columns: "Person(s)", "Item", "Due Date". Style the table with borders, optional striped rows, and due date in small grey font similar to Date & Duration.
+- Topics heading: H2; each topic title bold; descriptions normal text; sub-bullets allowed.
+- Next Steps heading: H2; each person bold; their next step(s) as bullets in normal text.
+
+5) Accessibility & formatting
+- Use readable font-family (system stack), adequate line-height, and good contrast (grey elements readable).
+- Use proper heading structure, lists, and table markup for accessibility.
+- Include data- attributes on key elements for parsing, e.g., data-section="participants", data-item="action-item".
+
+6) Layout
+- Header block with Meeting Title and Date/Duration.
+- Main sections in this order: Participants, Meeting Summary, Meeting Purpose, Key Takeaways, Action Items (as table), Topics, Next Steps.
+- Footer optional.
+
+7) Output rule
+- Output only the HTML document, nothing else. Do not write explanations, notes, or text outside the HTML.
+
+        

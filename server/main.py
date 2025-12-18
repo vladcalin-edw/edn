@@ -2,7 +2,7 @@ import threading
 
 from flask import Flask, request, render_template
 
-from services import SummarizeService, MeetingBot, RecordingService
+from services import SummarizeService, MeetingBot, RecordingService, TranscribeService
 
 
 app = Flask(__name__)
@@ -31,6 +31,26 @@ def meeting():
 
     meeting_bot_thread.start()
     return "the meeting bot started"
+
+
+@app.route("/transcribe", methods=["POST"])
+def transcribe():
+    data = request.get_json()
+    if not data:
+        return "data missing"
+
+    if not data["audio_file"]:
+        return "recipients missing"
+
+    transcribe_service = TranscribeService(data["audio_file"])
+
+    transcribe_service_thread = threading.Thread(
+        target=transcribe_service.speech_to_text, name="generate_transcript"
+    )
+
+    transcribe_service_thread.start()
+
+    return "the transcript is generating"
 
 
 @app.route("/summarize", methods=["POST"])
